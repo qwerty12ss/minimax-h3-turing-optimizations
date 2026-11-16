@@ -1,0 +1,501 @@
+{
+  "schema": 1,
+  "date": "2026-11-16",
+  "implementation_commit": "756f3d23f9abcefc49b84bbac229dbdcfcb68c72",
+  "platform": "Linux x86_64 / Python 3.12.3 / 2 x RTX 2080 Ti modified to 22 GiB / SM75",
+  "installation": {
+    "fresh_isolated_venv": true,
+    "system_site_packages": false,
+    "pip_check": "passed",
+    "pinned_repositories": "configs/stack.lock.json",
+    "resolved_dependency_constraints": "requirements/runtime-constraints.txt",
+    "native_attention_build": "passed",
+    "native_joint_swiglu_build_and_ptx_contract": "passed",
+    "installer_repeat_with_final_constraints": "passed",
+    "weights": "Five existing public model files fully SHA256-verified before linking; no private model files required",
+    "anonymous_model_source_probes": 5,
+    "source_probe_http_status": 206,
+    "full_weight_redownload_performed": false
+  },
+  "tests": {
+    "cpu_passed": 18,
+    "gpu_passed": 8,
+    "total_passed": 26,
+    "fresh_clone_cpu_passed": 18,
+    "fresh_clone_gpu_skipped": 8,
+    "wheel_build_and_frozen_source_bytes": "passed",
+    "attention_routing_smoke": "passed",
+    "joint_swiglu": {
+      "passed": true,
+      "fixtures": 44,
+      "variants": 88,
+      "mismatches": 0
+    }
+  },
+  "workflows": [
+    {
+      "workflow": "h3_turing_smoke_api.json",
+      "status": "success",
+      "validation": {
+        "video_frames": 124,
+        "height": 352,
+        "width": 640,
+        "video_finite": true,
+        "audio_finite": true,
+        "audio_sample_rate": 32000,
+        "audio_samples": 165600,
+        "optimizers": [
+          {
+            "blocks": 400,
+            "norm_calls": 800,
+            "rope_calls": 1600,
+            "joint_calls": 1600,
+            "shared_counts": {
+              "quant": 1600,
+              "post": 3200,
+              "down": 1600,
+              "up": 3200,
+              "packet_bytes": 40705446400,
+              "phases": 800
+            }
+          }
+        ]
+      },
+      "container": {
+        "video_codec": "h264",
+        "fps": "24/1",
+        "video_frames_decoded": 124,
+        "audio_codec": "aac",
+        "sample_rate": 32000,
+        "audio_frames_decoded": 162
+      }
+    },
+    {
+      "workflow": "h3_turing_8s_api.json",
+      "status": "success",
+      "validation": {
+        "video_frames": 192,
+        "height": 512,
+        "width": 960,
+        "video_finite": true,
+        "audio_finite": true,
+        "audio_sample_rate": 32000,
+        "audio_samples": 256000,
+        "optimizers": [
+          {
+            "blocks": 400,
+            "norm_calls": 800,
+            "rope_calls": 3200,
+            "joint_calls": 3200,
+            "shared_counts": {
+              "quant": 3200,
+              "post": 6400,
+              "down": 3200,
+              "up": 6400,
+              "packet_bytes": 130728147200,
+              "phases": 800
+            }
+          }
+        ]
+      },
+      "container": {
+        "video_codec": "h264",
+        "fps": "24/1",
+        "video_frames_decoded": 192,
+        "audio_codec": "aac",
+        "sample_rate": 32000,
+        "audio_frames_decoded": 250
+      }
+    }
+  ],
+  "parallel_vae": {
+    "mode": "temporal_hybrid",
+    "replica_bytes": 4847070912,
+    "groups": 11,
+    "tiles": 165
+  },
+  "limits": {
+    "performance_measurement": false,
+    "reason": "Functional checks ran with other GPU workloads present; no new comparative latency claim",
+    "historical_private_media_reproduced": false,
+    "universal_full_graph_bitwise_equivalence_claimed": false,
+    "gui_editor_interaction_tested": false,
+    "gui_scope": "Generated from the installed node schemas; optional widget defaults and graph links checked; API counterparts executed"
+  },
+  "publication": {
+    "model_weights_media_logs_credentials_and_machine_inventory_included": false,
+    "gitleaks_version": "8.30.1",
+    "secret_findings": 0,
+    "original_repository_visibility": "PRIVATE"
+  },
+  "tested_source_hashes": [
+    {
+      "path": "src/h3_turing/sum_reduce.py",
+      "sha256": "597708f7b00c9600572ad7a0843b24631b615d3cc3f250637361ea0ccd4a064c"
+    },
+    {
+      "path": "src/h3_turing/__init__.py",
+      "sha256": "17498ebfd1b8d7e2c9e943eb6c8576881a53ded074381c8bd5edd50b12806014"
+    },
+    {
+      "path": "src/h3_turing/pointwise.py",
+      "sha256": "3d9c76f9548e2f4879193845d359c378ac47ffa6424c78242dccc1d50956668f"
+    },
+    {
+      "path": "src/h3_turing/shared/extract.py",
+      "sha256": "3d190fa52827742fadc6c65ff6d07c80fc46a006bd34ea2a652992dd3398dcb4"
+    },
+    {
+      "path": "src/h3_turing/shared/packet_pipeline.py",
+      "sha256": "3a42c7e9b44ceba74a1bf925b5defbd29e77ee889f0e84f1520f240eaf7bd328"
+    },
+    {
+      "path": "src/h3_turing/shared/streamed.py",
+      "sha256": "33cf9a3b15edcc74c43fe65b11757fc8a1f36649cf0360f3d2b5b239a630c3cf"
+    },
+    {
+      "path": "src/h3_turing/shared/__init__.py",
+      "sha256": "17498ebfd1b8d7e2c9e943eb6c8576881a53ded074381c8bd5edd50b12806014"
+    },
+    {
+      "path": "src/h3_turing/shared/baseline.py",
+      "sha256": "cf8e4396e00e45993871e950f0fe1f3374cd900c06ff716167569624f38968cd"
+    },
+    {
+      "path": "src/h3_turing/shared/general_functions.py",
+      "sha256": "4abb4c696a825f5f7f2c206d38d91b9bcb7b81cff34a87242d761c1d4800dec5"
+    },
+    {
+      "path": "src/h3_turing/rope/direct_output.py",
+      "sha256": "f911514157174247320f58d60134069d36ca1cd32d56da7c12cc1c794174bef1"
+    },
+    {
+      "path": "src/h3_turing/rope/contract.py",
+      "sha256": "9390564c0af07ddbcdd1b757ae6f55e4e0c7e277481c97215c1cb592fd8be0d9"
+    },
+    {
+      "path": "src/h3_turing/rope/source_transform.py",
+      "sha256": "9f9561be60e4312cb8a4c3515ad7b9323fdc6638cf4f01211fa7219216aff683"
+    },
+    {
+      "path": "src/h3_turing/rope/kernel.py",
+      "sha256": "1be216bda0caea1b94e63c92148dfb3f0e5040f5f900cec7066536544b158d7d"
+    },
+    {
+      "path": "src/h3_turing/rope/__init__.py",
+      "sha256": "17498ebfd1b8d7e2c9e943eb6c8576881a53ded074381c8bd5edd50b12806014"
+    },
+    {
+      "path": "src/h3_turing/norm_mod/contract.py",
+      "sha256": "37528b08342d19f15bb1f906560785310e1bb631624ba91e626812c2b17cdbb9"
+    },
+    {
+      "path": "src/h3_turing/norm_mod/source_transform.py",
+      "sha256": "14e373760481527a1aaf77e2bb3341f672f79c680ca8ac8c70436e5d1deed06e"
+    },
+    {
+      "path": "src/h3_turing/norm_mod/row_map.py",
+      "sha256": "87d93fc07d565d2e5413bd7248b4c30919da4d47f27062dc7cdd7c481f040647"
+    },
+    {
+      "path": "src/h3_turing/norm_mod/kernel.py",
+      "sha256": "b50b80f57c1ef635c3793493f7e57c83f145be85ac36fc2d6a2556cced5b4a66"
+    },
+    {
+      "path": "src/h3_turing/norm_mod/__init__.py",
+      "sha256": "17498ebfd1b8d7e2c9e943eb6c8576881a53ded074381c8bd5edd50b12806014"
+    },
+    {
+      "path": "src/h3_turing/vae/spatial.py",
+      "sha256": "e3245fcdb073e33688d190ab6b70aa9931434e5fef65a7168e5ced82ae712c6a"
+    },
+    {
+      "path": "src/h3_turing/vae/__init__.py",
+      "sha256": "17498ebfd1b8d7e2c9e943eb6c8576881a53ded074381c8bd5edd50b12806014"
+    },
+    {
+      "path": "src/h3_turing/vae/temporal.py",
+      "sha256": "fd6bb905346a6ffdfd5fb5079b6cdfed0fc54295f1149ccf5cafa973f0e2638d"
+    },
+    {
+      "path": "src/h3_turing/vae/hybrid.py",
+      "sha256": "0494785d957a6696afad5df3b15cd1f8c24b5a35884de66f5c325c23a205fa8a"
+    },
+    {
+      "path": "src/h3_turing/attention/sm75_backend.py",
+      "sha256": "16a13b0fd67030c1b82f6ad82522b4957886f461967282b379dc99d3a33a7bee"
+    },
+    {
+      "path": "src/h3_turing/attention/sol_sm75_backend.py",
+      "sha256": "3a8b0a8508f3a1c831cf5c23fa46eba7286bb394e519874ea3bef5a3ac28e93a"
+    },
+    {
+      "path": "src/h3_turing/attention/__init__.py",
+      "sha256": "28c20b701f34654e88f0a4ccdb5dab88b23081c8db9490358bd5659bcce039d7"
+    },
+    {
+      "path": "src/h3_turing/attention/sol_backend.py",
+      "sha256": "9fd319190e2a61d1e5e7b573587930c0a297a6f282a705511ef03a843f3c5a18"
+    },
+    {
+      "path": "src/h3_turing/deployment/optimized.py",
+      "sha256": "b6ff3af9c3f7087e65832843f59ca03161349d11d70735d8b85951d92b5a48c6"
+    },
+    {
+      "path": "src/h3_turing/deployment/__init__.py",
+      "sha256": "a01c56fad94c14e62976fb0e1450f06dd3158fddad2afb3fc1cde31d8bb4a962"
+    },
+    {
+      "path": "src/h3_turing/deployment/validation.py",
+      "sha256": "0312ebbcfe487b38ba3f5809f308eaf3889d20c4c6773a9e29d009f70b08cb27"
+    },
+    {
+      "path": "src/h3_turing/deployment/nodes.py",
+      "sha256": "ac339d5c21efdc3282fda3c628da08909d420e600a696caa42f861946530812d"
+    },
+    {
+      "path": "src/h3_turing/experimental/native_quant.cu",
+      "sha256": "6b52e4b5826b53dc66d3a857aaa7d9e589edab1cf5c2b0f6b6441c946021aa8f"
+    },
+    {
+      "path": "src/h3_turing/experimental/exact_dequant_pdd.py",
+      "sha256": "ab3a5a6aa9fa85b3a9ffea874f09f00befd47e530dc4a9a786d46ff2a4331ee7"
+    },
+    {
+      "path": "src/h3_turing/experimental/quant_regs.cu",
+      "sha256": "13d9ddf500c5ceeef0a8817d68d6cd25541a0c06b75af4cdadbb0e5b6c9770fa"
+    },
+    {
+      "path": "src/h3_turing/experimental/postquant_accumulator.py",
+      "sha256": "370a4d0f30dea5dc6e5cfc941f8aa16bf0d9bd2c92f689873db2187a446d3bd5"
+    },
+    {
+      "path": "src/h3_turing/experimental/native_quant.py",
+      "sha256": "1575c43c7d3315fa70a121c40f9af91d1f3078dd1a5786b97f898d5f632e52ef"
+    },
+    {
+      "path": "src/h3_turing/experimental/quantization.py",
+      "sha256": "1732ed4117a1772e0b5058f4c05975c63f8dacc4d196c5a7e6a1d7d290a48c33"
+    },
+    {
+      "path": "src/h3_turing/experimental/__init__.py",
+      "sha256": "17498ebfd1b8d7e2c9e943eb6c8576881a53ded074381c8bd5edd50b12806014"
+    },
+    {
+      "path": "src/h3_turing/experimental/sol_headtau_preprocess.cuh",
+      "sha256": "20c7975c1ee0e990b0f0c51555585c0759c67193307eb5a6e672695f9c03b452"
+    },
+    {
+      "path": "src/h3_turing/experimental/headtau.py",
+      "sha256": "6dcfc7f2087c25f9de6b169617bfc548746d9f3e1fabef68bec40ee1e8f19940"
+    },
+    {
+      "path": "src/h3_turing/experimental/headtau_routes.cu",
+      "sha256": "d389f890a645f600591431021b2e0530fd404f28d14ea7c1a10e922e97446cec"
+    },
+    {
+      "path": "src/h3_turing/swiglu_convrot/joint.cu",
+      "sha256": "ba45a953b39aad85346913635468f9a2c6187ca66df203ba9736aeb08836872e"
+    },
+    {
+      "path": "src/h3_turing/swiglu_convrot/joint.py",
+      "sha256": "152440c9faacb382a85e04c76b0d54d2515b4e6dc0b5bb1bd9ee98f8e89ea3c2"
+    },
+    {
+      "path": "src/h3_turing/swiglu_convrot/__init__.py",
+      "sha256": "17498ebfd1b8d7e2c9e943eb6c8576881a53ded074381c8bd5edd50b12806014"
+    },
+    {
+      "path": "src/h3_turing/h3_native_int8_tp2_central_sparse/sparse_attention.py",
+      "sha256": "86c18273d080e98c05587a35d35416a99dfb6897cd19a41663b40e615607ea12"
+    },
+    {
+      "path": "src/h3_turing/h3_native_int8_tp2_central_sparse/tp2.py",
+      "sha256": "e7c45a7f44d4ce81c9b20786a5d5eb838ad89c284859f000a65fa4a3fbcac4a5"
+    },
+    {
+      "path": "src/h3_turing/h3_native_int8_tp2_central_sparse/__init__.py",
+      "sha256": "d994274eca2ebcac0714decce7b08f4e7870ee30c3e0dea35e7134d0b8772626"
+    },
+    {
+      "path": "src/h3_turing/h3_native_int8_tp2_central_sparse/central_block.py",
+      "sha256": "2e0c2a2ca37b299042616cd1ec1f68ea9328888d6ef239f8a67e364b61beaafc"
+    },
+    {
+      "path": "src/h3_turing/attention/csrc/sol_sm75_preprocess.cuh",
+      "sha256": "49c31a34b4193b58cc48e3f6cf4566cdfda1de645cc6eb5cb42fd33a822fb1e1"
+    },
+    {
+      "path": "src/h3_turing/attention/csrc/sla_sm75_fp16_kernel.cuh",
+      "sha256": "817fcffcadc4c947dfb21d3e910d594175e7af5f8883d03fc44c0d062be2a76e"
+    },
+    {
+      "path": "src/h3_turing/attention/csrc/sla_sm75_preprocess.cuh",
+      "sha256": "6fa2496f6dc7ee6edd1b88d06634976576e1b5a3afe52403a12d524835dde26e"
+    },
+    {
+      "path": "src/h3_turing/attention/csrc/sla_sm75_sparse.cu",
+      "sha256": "b3648303c84afc00f9acd1c4c65477f1bf0abb05c01ae325114685f727d13a07"
+    },
+    {
+      "path": "src/h3_turing/attention/csrc/third_party/comfy_kitchen_sage/quant_v_int8.cu",
+      "sha256": "aa0d36c7eb60daa1c131d26be53b0772226783f2eb5cf5e43727b3ee6f015342"
+    },
+    {
+      "path": "src/h3_turing/attention/csrc/third_party/comfy_kitchen_sage/numeric_conversion.cuh",
+      "sha256": "14cbcb4345c039d24f967a2bbf6ebc8420519adee9798f96f4dfb397ddb2adf6"
+    },
+    {
+      "path": "src/h3_turing/attention/csrc/third_party/comfy_kitchen_sage/attn_utils.cuh",
+      "sha256": "637994f24b4be3b037b64da6730d3d701f7d91a2a18bde18a1959dbf2ef15c06"
+    },
+    {
+      "path": "src/h3_turing/attention/csrc/third_party/comfy_kitchen_sage/cp_async.cuh",
+      "sha256": "d804ae201feecafb23a9ac08f1db39509bb93a73da87d5ce18eb66ff6dbb0977"
+    },
+    {
+      "path": "src/h3_turing/attention/csrc/third_party/comfy_kitchen_sage/permuted_smem.cuh",
+      "sha256": "1819af7bbb7ec32b5b340b4dded5e9d8cf9cb121295ad14b5ae260ec3b61ce6a"
+    },
+    {
+      "path": "src/h3_turing/attention/csrc/third_party/comfy_kitchen_sage/dtype_dispatch.cuh",
+      "sha256": "ad281375922b5bc345b0bbde75ee9c24e9ecc81e8c6d94f79a09d315ecb90a70"
+    },
+    {
+      "path": "src/h3_turing/attention/csrc/third_party/comfy_kitchen_sage/mma.cuh",
+      "sha256": "fd6bb9febae79107b7c3c6d999cfddc0c84c598ea1f3d7858f805c29013e5c5b"
+    },
+    {
+      "path": "src/h3_turing/attention/csrc/third_party/comfy_kitchen_sage/qk_int_sv_i8_cuda.cuh",
+      "sha256": "45e57a6c9aa20806ccf9a5e84a7ae07757ec90e9a9de90615de112f2651fc9b9"
+    },
+    {
+      "path": "src/h3_turing/attention/csrc/third_party/comfy_kitchen_sage/math.cuh",
+      "sha256": "7efd9e56ecad034311e4bb9d0aa0f14fa40750f52fe17cd26b7d54162ed7ee3a"
+    },
+    {
+      "path": "src/h3_turing/attention/csrc/third_party/comfy_kitchen_sage/float_utils.cuh",
+      "sha256": "6d38112d07cfcfe7d1be9d9a5c5a006e379fcfdcdc78bf4729259ef581adc707"
+    },
+    {
+      "path": "src/h3_turing/attention/csrc/third_party/comfy_kitchen_sage/quant_qk_int8.cu",
+      "sha256": "e87f0dfbb4c07ac963a698e2a0a869343592e0ea1757a602e08284417d863687"
+    },
+    {
+      "path": "src/h3_turing/deployment/pdd/transform.py",
+      "sha256": "3e61eb8e7fe700156d079573d5bfbcb73a24385bad694cea70171227f965364c"
+    },
+    {
+      "path": "src/h3_turing/deployment/pdd/owner.py",
+      "sha256": "d9a0496bfcb369233b150b864ece7fa1d97495a4b456d7d3128f0db45f52c797"
+    },
+    {
+      "path": "src/h3_turing/deployment/pdd/__init__.py",
+      "sha256": "a01c56fad94c14e62976fb0e1450f06dd3158fddad2afb3fc1cde31d8bb4a962"
+    },
+    {
+      "path": "src/h3_turing/deployment/pdd/source/runtime_pdd.py",
+      "sha256": "863df6b6f9ff04618c0936b964f7976cbb0d2d3d1feea4fbd1e03bd096106d10"
+    },
+    {
+      "path": "src/h3_turing/deployment/pdd/source/__init__.py",
+      "sha256": "a01c56fad94c14e62976fb0e1450f06dd3158fddad2afb3fc1cde31d8bb4a962"
+    },
+    {
+      "path": "tools/models.py",
+      "sha256": "8e65120a2b8bfad58296f2b973131e5535aecc575477cff356a437ab29d12c88"
+    },
+    {
+      "path": "tools/summarize_results.py",
+      "sha256": "db37781e2adf901fa41c9437754273ea801ab18b01a6abdebdb9e23fac201614"
+    },
+    {
+      "path": "tools/run_workflow.py",
+      "sha256": "697688c2d7a52e46ee2c8bdb56d960ce6612f9d218f5aae4b2feda7d59798003"
+    },
+    {
+      "path": "tools/setup_stack.py",
+      "sha256": "23446c786a49b86bc0f9ff6aba6ace581aa2543311df821c46cf345b37f985f3"
+    },
+    {
+      "path": "tools/make_workflows.py",
+      "sha256": "59bf5dc702377badde6261d72e17a5628758444b98867df8dcede2bef7adcf36"
+    },
+    {
+      "path": "tools/make_gui_workflows.py",
+      "sha256": "b02c88fe1ea4bb4c1cd4d1bf34b145559c3fdb3cae5f56456514d8dff6de2488"
+    },
+    {
+      "path": "tools/launch.py",
+      "sha256": "1548ccc9b7c07a922ef58cba19b755513e9612037c7445fa6f65a039b4d7284c"
+    },
+    {
+      "path": "tools/build_native.py",
+      "sha256": "15b8fbfcc6037cc4d978cab75a56b913bcee0114c2245ddbbe6e79953708b009"
+    },
+    {
+      "path": "tests/test_deployment.py",
+      "sha256": "e9087873258a6520e24d15b77e590a30d6f716238cf1e13f3fb65b87c2ba914c"
+    },
+    {
+      "path": "tests/test_results.py",
+      "sha256": "6e34fb3f60ad5bfffe017a0dc86119bc9829e1b2cbbb1f9f6888f7df5d0fbdd5"
+    },
+    {
+      "path": "tests/test_package.py",
+      "sha256": "83c1ab198c59c95dd6ad5b8d8a6692981702e441da8a9db6cd51a9cac41edcbb"
+    },
+    {
+      "path": "tests/test_contracts.py",
+      "sha256": "66d3fab8623c8870e0dc1727c013358adcee3c6f4632da97f35e1929b25b4b2f"
+    },
+    {
+      "path": "tests/test_gpu_rounding.py",
+      "sha256": "cdc919e3c3f875dc4d35464f36e6fc344186264f0a37687c3025ea7760b0901a"
+    },
+    {
+      "path": "configs/models.lock.json",
+      "sha256": "e614bac93592aeaedea739745bb2c202c0019dd6d58dd10d4bb2488f6521d29e"
+    },
+    {
+      "path": "configs/stack.lock.json",
+      "sha256": "43570da59ae84997121af89615f2c6db1110a1e068c264bc2c5c821115c7ecae"
+    },
+    {
+      "path": "configs/anchor_8s.json",
+      "sha256": "5db43c5fc541bdb37b0528a3690c88fb6342e6143b96c80fa8ac5f67e9425084"
+    },
+    {
+      "path": "configs/model_files.json",
+      "sha256": "f48c414fc136feb314d9f72b070ea33dc3ef86335357ea0c16b0cbaef95c586c"
+    },
+    {
+      "path": "configs/hardware.json",
+      "sha256": "2c077e7561facc1c4ccbf4c6625a26d1a8954982d5b6fe28910d12f7f437caf9"
+    },
+    {
+      "path": "requirements/runtime-constraints.txt",
+      "sha256": "1e5384e403c3505760f93aea9f19cdc6d9021ca48df8d0d8390c76f125720c3a"
+    },
+    {
+      "path": "workflows/h3_turing_smoke_gui.json",
+      "sha256": "b7dae7cf6ebf40f603972946b0fe171c8f9ecc45500a82f7e80391aeeab536f9"
+    },
+    {
+      "path": "workflows/h3_turing_8s_gui.json",
+      "sha256": "969b3ffaf66575716dac2cbe8ba420dd2438a1b4bb961754db6ef68d3f07df3a"
+    },
+    {
+      "path": "workflows/h3_turing_8s_api.json",
+      "sha256": "4a64011cb407bad1bea2217cc082e4171c440b5149873cec2a5c3efa333943b9"
+    },
+    {
+      "path": "workflows/h3_turing_smoke_api.json",
+      "sha256": "177384a9adb535bd51cf0c3aa409d5c7109d0f311dce2ae33f425a9f7dc67334"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "5bfd4d56ab77be592ad5abd96ec5f73011367405572ab799fc1df8daebb23404"
+    }
+  ]
+}
