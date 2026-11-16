@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "platform": "Linux x86_64",
+  "python": "3.12",
+  "cuda_toolkit": "13.0",
+  "torch_index": "https://download.pytorch.org/whl/cu130",
+  "repositories": {
+    "ComfyUI": {"url": "https://github.com/Comfy-Org/ComfyUI.git", "commit": "63be2f9b82ad0dac88a7ceaa28a9cf3154125a18"},
+    "ComfyUI-MiniMax-H3-PDD-Acc": {"url": "https://github.com/Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc.git", "commit": "311a65dd53832d8a5f8177a9d5fb923c09e35a90"},
+    "minimax-h3-fp16-exact-star7": {"url": "https://github.com/star7code/minimax-h3-fp16-exact-star7.git", "commit": "27c44a7c39fc8de2d0e8eac6c5ad8032962a30d2"},
+    "minimax-h3-chunk-star7": {"url": "https://github.com/star7code/minimax-h3-chunk-star7.git", "commit": "971bbe0c8f0e75eb160a96865e74823096b93a98"}
+  },
+  "source_guards": {"comfy_kitchen_cuda_sha256": "c5b1c3bc70869e418728114e8c27a889cf5b56ccb31ccf82a001386aef12ee8e"}
+}

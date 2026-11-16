@@ -1,0 +1,242 @@
+{
+  "1": {
+    "class_type": "MiniMaxH3FP16LoaderStar7",
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_pruned_int8_convrot.safetensors"
+    }
+  },
+  "2": {
+    "class_type": "MiniMaxH3SigmaShift",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "shift_video": 12.0,
+      "shift_audio": 3.0
+    }
+  },
+  "3": {
+    "class_type": "MiniMaxH3PDDAccApply",
+    "inputs": {
+      "model": [
+        "2",
+        0
+      ],
+      "pdd_file": "MiniMax-H3-FL2VA-Acc-8Step.safetensors",
+      "nfe": "8",
+      "lora_strength": 1.0,
+      "head_strength": 1.0,
+      "on_off_grid": "error",
+      "partition_check": "error"
+    }
+  },
+  "4": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    }
+  },
+  "5": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    }
+  },
+  "6": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    }
+  },
+  "7": {
+    "class_type": "MiniMaxH3ActivationChunkStar7",
+    "inputs": {
+      "model": [
+        "3",
+        0
+      ],
+      "chunk_tokens": 8192,
+      "auto_halve_on_oom": true,
+      "verbose": true,
+      "mlp_chunk_tokens": 8192,
+      "disable_dynamic_prefetch": "auto",
+      "qkv_chunk_tokens": 8192,
+      "out_proj_chunk_tokens": 4096,
+      "reuse_mlp_weights": true,
+      "attention_backend": "comfy_kitchen_int8"
+    }
+  },
+  "8": {
+    "class_type": "H3TuringApply",
+    "inputs": {
+      "model": [
+        "7",
+        0
+      ],
+      "preset": "optimized",
+      "sol_tau": 1.0,
+      "reserve_gib": 18.0
+    }
+  },
+  "9": {
+    "class_type": "MiniMaxH3ImageToVideo",
+    "inputs": {
+      "clip": [
+        "4",
+        0
+      ],
+      "vae": [
+        "5",
+        0
+      ],
+      "prompt": "A red rectangular block stands on a blue gray surface. The camera stays still. Soft daylight. Quiet room tone, no speech.",
+      "width": 640,
+      "height": 352,
+      "length": 124,
+      "first_frame": [
+        "19",
+        0
+      ]
+    }
+  },
+  "10": {
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 42
+    }
+  },
+  "11": {
+    "class_type": "BasicGuider",
+    "inputs": {
+      "model": [
+        "8",
+        0
+      ],
+      "conditioning": [
+        "9",
+        0
+      ]
+    }
+  },
+  "12": {
+    "class_type": "KSamplerSelect",
+    "inputs": {
+      "sampler_name": "euler"
+    }
+  },
+  "13": {
+    "class_type": "H3TuringVAE",
+    "inputs": {
+      "vae": [
+        "5",
+        0
+      ],
+      "mode": "serial"
+    }
+  },
+  "14": {
+    "class_type": "SamplerCustomAdvanced",
+    "inputs": {
+      "noise": [
+        "10",
+        0
+      ],
+      "guider": [
+        "11",
+        0
+      ],
+      "sampler": [
+        "12",
+        0
+      ],
+      "sigmas": [
+        "3",
+        1
+      ],
+      "latent_image": [
+        "9",
+        1
+      ]
+    }
+  },
+  "15": {
+    "class_type": "VAEDecodeTiled",
+    "inputs": {
+      "samples": [
+        "14",
+        0
+      ],
+      "vae": [
+        "13",
+        0
+      ],
+      "tile_size": 256,
+      "overlap": 64,
+      "temporal_size": 32,
+      "temporal_overlap": 8
+    }
+  },
+  "16": {
+    "class_type": "VAEDecodeAudio",
+    "inputs": {
+      "samples": [
+        "14",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ]
+    }
+  },
+  "17": {
+    "class_type": "CreateVideo",
+    "inputs": {
+      "images": [
+        "20",
+        0
+      ],
+      "audio": [
+        "20",
+        1
+      ],
+      "fps": 24.0,
+      "bit_depth": 8
+    }
+  },
+  "18": {
+    "class_type": "SaveVideo",
+    "inputs": {
+      "video": [
+        "17",
+        0
+      ],
+      "filename_prefix": "video/h3_turing_smoke",
+      "format": "mp4",
+      "format.codec": "h264"
+    }
+  },
+  "19": {
+    "class_type": "H3TuringTestImage",
+    "inputs": {
+      "width": 640,
+      "height": 352
+    }
+  },
+  "20": {
+    "class_type": "H3TuringValidateFrames",
+    "inputs": {
+      "images": [
+        "15",
+        0
+      ],
+      "audio": [
+        "16",
+        0
+      ]
+    }
+  }
+}

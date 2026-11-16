@@ -35,9 +35,10 @@
     {
       "path": "src/h3_turing/rope/contract.py",
       "snapshot_sha256": "6329bf87a3612b54b15068361271d02e6462ee54ebd2668147857c152f22dd90",
-      "published_sha256": "b1094737602f17b26b07bbad1575de002dc61d5b929ac1f2e63e2256bd70f2a3",
+      "published_sha256": "9390564c0af07ddbcdd1b757ae6f55e4e0c7e277481c97215c1cb592fd8be0d9",
       "adaptations": [
-        "Retain operator geometry/fixture contracts; omit machine-specific historical qualification loader"
+        "Retain operator geometry/fixture contracts; omit machine-specific historical qualification loader",
+        "Restore original TP2 core pin for standalone inverse-checked source transformation"
       ]
     },
     {
@@ -55,8 +56,10 @@
     {
       "path": "src/h3_turing/vae/spatial.py",
       "snapshot_sha256": "8f0ff48f72a1f09d9cdecee581cfe238f717e05fb59b82c2dca58693997ddef9",
-      "published_sha256": "8f0ff48f72a1f09d9cdecee581cfe238f717e05fb59b82c2dca58693997ddef9",
-      "adaptations": []
+      "published_sha256": "e3245fcdb073e33688d190ab6b70aa9931434e5fef65a7168e5ced82ae712c6a",
+      "adaptations": [
+        "Allow an explicit instance-owned decode context class for temporal hybrid scheduling"
+      ]
     },
     {
       "path": "src/h3_turing/vae/temporal.py",
@@ -316,6 +319,72 @@
       "snapshot_sha256": "178f46f58127373d449565589a32c2b5b60c082934618c17b7ce6890c61ef394",
       "published_sha256": "178f46f58127373d449565589a32c2b5b60c082934618c17b7ce6890c61ef394",
       "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/h3_native_int8_tp2_central_sparse/__init__.py",
+      "snapshot_sha256": "adfb54404b0392e59a6e1d6f16579707e5fbf2e9d1e098f7681aa8fc2083ae5c",
+      "published_sha256": "d994274eca2ebcac0714decce7b08f4e7870ee30c3e0dea35e7134d0b8772626",
+      "adaptations": [
+        "Allow a per-state block implementation; default original central block is unchanged"
+      ]
+    },
+    {
+      "path": "src/h3_turing/h3_native_int8_tp2_central_sparse/tp2.py",
+      "snapshot_sha256": "e7c45a7f44d4ce81c9b20786a5d5eb838ad89c284859f000a65fa4a3fbcac4a5",
+      "published_sha256": "e7c45a7f44d4ce81c9b20786a5d5eb838ad89c284859f000a65fa4a3fbcac4a5",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/h3_native_int8_tp2_central_sparse/central_block.py",
+      "snapshot_sha256": "2e0c2a2ca37b299042616cd1ec1f68ea9328888d6ef239f8a67e364b61beaafc",
+      "published_sha256": "2e0c2a2ca37b299042616cd1ec1f68ea9328888d6ef239f8a67e364b61beaafc",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/h3_native_int8_tp2_central_sparse/sparse_attention.py",
+      "snapshot_sha256": "eab38785c34f72a704158d8f617b1779b5898d60da13a10ca7264ba82dc5fcd9",
+      "published_sha256": "86c18273d080e98c05587a35d35416a99dfb6897cd19a41663b40e615607ea12",
+      "adaptations": [
+        "Portable package dependency resolution; SM75 Sol-only profile"
+      ]
+    },
+    {
+      "path": "src/h3_turing/norm_mod/source_transform.py",
+      "snapshot_sha256": "14e373760481527a1aaf77e2bb3341f672f79c680ca8ac8c70436e5d1deed06e",
+      "published_sha256": "14e373760481527a1aaf77e2bb3341f672f79c680ca8ac8c70436e5d1deed06e",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/rope/source_transform.py",
+      "snapshot_sha256": "9f9561be60e4312cb8a4c3515ad7b9323fdc6638cf4f01211fa7219216aff683",
+      "published_sha256": "9f9561be60e4312cb8a4c3515ad7b9323fdc6638cf4f01211fa7219216aff683",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/deployment/pdd/source/runtime_pdd.py",
+      "snapshot_sha256": "863df6b6f9ff04618c0936b964f7976cbb0d2d3d1feea4fbd1e03bd096106d10",
+      "published_sha256": "863df6b6f9ff04618c0936b964f7976cbb0d2d3d1feea4fbd1e03bd096106d10",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/deployment/pdd/owner.py",
+      "snapshot_sha256": "d9a0496bfcb369233b150b864ece7fa1d97495a4b456d7d3128f0db45f52c797",
+      "published_sha256": "d9a0496bfcb369233b150b864ece7fa1d97495a4b456d7d3128f0db45f52c797",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/deployment/pdd/transform.py",
+      "snapshot_sha256": "3e61eb8e7fe700156d079573d5bfbcb73a24385bad694cea70171227f965364c",
+      "published_sha256": "3e61eb8e7fe700156d079573d5bfbcb73a24385bad694cea70171227f965364c",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/attention/sol_backend.py",
+      "snapshot_sha256": "497fb328f6599ca42ad87d12e845e1d9a9673090e51c8fff843ac2e7d93cbf1d",
+      "published_sha256": "9fd319190e2a61d1e5e7b573587930c0a297a6f282a705511ef03a843f3c5a18",
+      "adaptations": [
+        "Avoid unused SLA helper import on the SM75-only deployment path; SM75 arithmetic unchanged"
+      ]
     }
   ],
   "scope": "Reviewed operator snapshots; SHA256 identifies original and published bytes without publishing private source paths."

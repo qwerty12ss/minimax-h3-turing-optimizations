@@ -16,3 +16,12 @@ src/h3_turing/attention/bin/
 .env.*
 *.pem
 *.key
+*.safetensors
+*.partial
+*.mp4
+*.wav
+*.png
+*.jpg
+*.log
+runtime/
+.runtime/

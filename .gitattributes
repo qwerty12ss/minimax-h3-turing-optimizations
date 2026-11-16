@@ -1,1 +1,3 @@
 * text=auto eol=lf
+# The frozen TP2 snapshot is byte-pinned by the AST adapters (original CRLF).
+src/h3_turing/h3_native_int8_tp2_central_sparse/tp2.py -text

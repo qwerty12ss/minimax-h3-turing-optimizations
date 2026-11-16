@@ -17,3 +17,5 @@ Validation on the publication workstation:
 - GPU compilation, historical video reproduction and performance remeasurement were **not performed** for this release. Published numerical results retain their original measurement scope and dates.
 
 The original research repository remains separate and private. Subsequent contributions need their own content/secret review; this review covers the initial curated release.
+
+The subsequent standalone deployment adds source-pinned TP2/PDD integration, an isolated installer, public model URLs/checksums and synthetic workflows. Its fresh installation, GPU checks, video/audio execution and additional publication scan are recorded in [DEPLOYMENT_VALIDATION.md](DEPLOYMENT_VALIDATION.md). The original release's test counts above remain a historical receipt.

@@ -275,7 +275,7 @@ class SpatialGroupParallel:
 _OWNED_LOCK = threading.Lock()
 
 
-def install_owned_decode_wrapper(vae, peer_device="cuda:1", *, min_free_after_copy=1024 * 2**20):
+def install_owned_decode_wrapper(vae, peer_device="cuda:1", *, min_free_after_copy=1024 * 2**20, context_class=None):
     """Install on one Comfy VAE object; return a callable restoring its method.
 
     Wrapper creation itself does not load models or initialize CUDA. The original
@@ -283,6 +283,7 @@ def install_owned_decode_wrapper(vae, peer_device="cuda:1", *, min_free_after_co
     lifetime covers one complete video decode, not subsequent sampling jobs.
     Replica construction/release time is inside the measured VAE node.
     """
+    context_class = context_class or SpatialGroupParallel
     original = vae._decode_tiled_owned
     old_attribute = vae.__dict__.get("_decode_tiled_owned", _MISSING)
     old_marker = vae.__dict__.get("_h3_parallel_owned_installed", _MISSING)
@@ -320,7 +321,7 @@ def install_owned_decode_wrapper(vae, peer_device="cuda:1", *, min_free_after_co
                 clone_seconds = time.perf_counter() - t0
                 adapter = None
                 try:
-                    with SpatialGroupParallel(owner, replica, peer) as adapter:
+                    with context_class(owner, replica, peer) as adapter:
                         result = original(samples, **kwargs)
                 finally:
                     # SpatialGroupParallel has drained all workers before this.

@@ -30,3 +30,5 @@ def metric(value):
 
 def ptx_proof(value):
     require(value.get('non_ftz') is True and value.get('mul_rn_f32', 0) > 0 and (value.get('fma_rn_f32', 0) > 0) and (value.get('cvt_rn_f16_f32', 0) > 0) and (value.get('no_reduction') is True) and (value.get('target_sm75') is True) and (len(value.get('ptx_sha256', '')) == 64) and (value.get('ptx_bytes', 0) > 0), 'Actual explicit non-FTZ compiled PTX missing')
+
+CORE_SHA = 'e7c45a7f44d4ce81c9b20786a5d5eb838ad89c284859f000a65fa4a3fbcac4a5'

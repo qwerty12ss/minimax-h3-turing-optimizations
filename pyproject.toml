@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "minimax-h3-turing-optimizations"
-version = "0.1.0"
-description = "Reviewed SM75 MiniMax H3 acceleration kernels and benchmark ledgers"
+version = "0.2.0"
+description = "SM75 MiniMax H3 acceleration kernels, isolated deployment and benchmark ledgers"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = []

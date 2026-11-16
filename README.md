@@ -18,7 +18,7 @@ This is a curated research release with a new Git history. It includes no input 
 | VAE scheduling | `vae/` | Reversible spatial/temporal scheduling around the owner's existing decoder and assembler |
 | Unpromoted experiments | `experimental/` | Exact dequant/PDD fusion, head-dependent thresholds and quantizer clipping; limitations in the benchmark notes |
 
-The sources are operator building blocks, not a packaged ComfyUI node or a one-command reproduction of the historical video graph. Private graph integration was replaced by explicit imports or omitted. Source hashes and adaptation notes are in [the source manifest](results/source_manifest.json). Original numerical kernel bodies were retained except where a packaging adaptation is recorded.
+Includes ComfyUI custom nodes, the original TP2 core, PDD integration, an isolated stack installer and two portable video/audio workflows. **[Deploy from scratch](docs/INSTALL.md)** covers hardware, SHA256-pinned public models, dependencies, configuration and execution. See [deployment validation](docs/DEPLOYMENT_VALIDATION.md) for actual checks. New synthetic workflows need no historical private assets. Source hashes and adaptation notes are in [the source manifest](results/source_manifest.json).
 
 ## Recorded full-job results
 

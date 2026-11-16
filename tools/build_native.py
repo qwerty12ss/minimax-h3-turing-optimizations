@@ -21,6 +21,8 @@ def compiler():
             if candidate.is_file():
                 return str(candidate)
     found = shutil.which("nvcc")
+    if not found and Path("/usr/local/cuda/bin/nvcc").is_file():
+        found = "/usr/local/cuda/bin/nvcc"
     if not found:
         raise RuntimeError("nvcc missing: set CUDA_HOME or add it to PATH")
     return found
