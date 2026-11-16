@@ -1,5 +1,7 @@
 # MiniMax H3: Turing / RTX 2080 Ti optimizations
 
+**English** | [Русский](README.ru.md)
+
 Research sources, operator tests, benchmark parameters and numeric results for MiniMax H3 on **two RTX 2080 Ti cards modified to 22 GiB each**. The recorded host has **2 × Xeon E5-2686 v4, 128 GB RAM, PCIe 3.0 ×16 per GPU and an NV2 link** between the pair.
 
 This is a curated research release with a new Git history. It includes no input media, generated videos, creative prompts, conversations, model weights, deployment inventories or prebuilt binaries. Historical measurements are provided as numbers; synthetic tests provide an independent way to check the published operators.
