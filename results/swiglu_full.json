@@ -1,0 +1,359 @@
+{
+  "success": true,
+  "execution_metric": "Comfy execution_start to execution_success; fingerprints queried afterwards",
+  "graph": {
+    "width": 960,
+    "height": 512,
+    "frames": 192,
+    "fps": 24,
+    "seed": 2026110123
+  },
+  "hot_arm_medians": {
+    "control-before": 164.279,
+    "candidate": 159.739,
+    "control-after": 163.4205
+  },
+  "control_hot_median_seconds": 163.4205,
+  "candidate_hot_median_seconds": 159.739,
+  "saved_seconds": 3.6814999999999998,
+  "reduction_percent": 2.2527773443356214,
+  "control_before_after_difference_percent": -0.5225865752774173,
+  "stage_comparison": {
+    "audio_decode": {
+      "control_median": 0.7315043534908909,
+      "candidate_median": 0.748977447496145,
+      "saved_seconds": -0.017473094005254097,
+      "reduction_percent": -2.388652086876708
+    },
+    "conditioning": {
+      "control_median": 12.670828389018425,
+      "candidate_median": 12.500191552491742,
+      "saved_seconds": 0.1706368365266826,
+      "reduction_percent": 1.3466904553341652
+    },
+    "model_and_graph_preparation": {
+      "control_median": 0.01635125001484994,
+      "candidate_median": 0.01604391100408975,
+      "saved_seconds": 0.0003073390107601881,
+      "reduction_percent": 1.879605598844536
+    },
+    "mp4_save": {
+      "control_median": 6.450759374012705,
+      "candidate_median": 6.436523659518571,
+      "saved_seconds": 0.0142357144941343,
+      "reduction_percent": 0.2206827703337355
+    },
+    "sampling": {
+      "control_median": 125.04605166950205,
+      "candidate_median": 121.52864682301879,
+      "saved_seconds": 3.5174048464832595,
+      "reduction_percent": 2.8128875718361757
+    },
+    "video_assembly": {
+      "control_median": 0.005229718488408253,
+      "candidate_median": 0.004468746512429789,
+      "saved_seconds": 0.0007609719759784639,
+      "reduction_percent": 14.550916606030883
+    },
+    "video_decode": {
+      "control_median": 18.015310797010898,
+      "candidate_median": 17.982860590011114,
+      "saved_seconds": 0.032450206999783404,
+      "reduction_percent": 0.18012571287511214
+    }
+  },
+  "all_raw_exact": true,
+  "raw_descriptor_checks": 99,
+  "all_media_fully_decoded": true,
+  "candidate_passed": true,
+  "completed": [
+    {
+      "arm": "control-before",
+      "phase": "cold",
+      "seconds": 174.605,
+      "sampler_seconds": 126.65166739601409,
+      "stages": {
+        "model_and_graph_preparation": 7.387440271035302,
+        "conditioning": 14.202955335989827,
+        "sampling": 126.65166739601409,
+        "audio_decode": 0.7939293830131646,
+        "video_decode": 18.036823148984695,
+        "video_assembly": 0.0053023720101919025,
+        "mp4_save": 6.866201199009083
+      },
+      "memory": [
+        {
+          "rank": 0,
+          "peak_allocated": 19039317504,
+          "peak_reserved": 19786629120,
+          "alloc_retries_delta": 0,
+          "ooms_delta": 0
+        },
+        {
+          "rank": 1,
+          "peak_allocated": 15639973376,
+          "peak_reserved": 16850616320,
+          "alloc_retries_delta": 0,
+          "ooms_delta": 0
+        }
+      ],
+      "raw_exact": true
+    },
+    {
+      "arm": "control-before",
+      "phase": "hot1",
+      "seconds": 166.182,
+      "sampler_seconds": 127.26968609000323,
+      "stages": {
+        "model_and_graph_preparation": 0.014870602026348934,
+        "conditioning": 13.160266810999019,
+        "sampling": 127.26968609000323,
+        "audio_decode": 0.7212027850036975,
+        "video_decode": 18.03477107701474,
+        "video_assembly": 0.005627526988973841,
+        "mp4_save": 6.47050244701677
+      },
+      "memory": [
+        {
+          "rank": 0,
+          "peak_allocated": 19166438912,
+          "peak_reserved": 19891486720,
+          "alloc_retries_delta": 0,
+          "ooms_delta": 0
+        },
+        {
+          "rank": 1,
+          "peak_allocated": 15665532416,
+          "peak_reserved": 16913530880,
+          "alloc_retries_delta": 0,
+          "ooms_delta": 0
+        }
+      ],
+      "raw_exact": true
+    },
+    {
+      "arm": "control-before",
+      "phase": "hot2",
+      "seconds": 162.376,
+      "sampler_seconds": 124.82781784998951,
+      "stages": {
+        "model_and_graph_preparation": 0.017831898003350943,
+        "conditioning": 11.665269802993862,
+        "sampling": 124.82781784998951,
+        "audio_decode": 0.8413423850142863,
+        "video_decode": 18.057541952992324,
+        "video_assembly": 0.004831909987842664,
+        "mp4_save": 6.43101630100864
+      },
+      "memory": [
+        {
+          "rank": 0,
+          "peak_allocated": 19161850368,
+          "peak_reserved": 19998441472,
+          "alloc_retries_delta": 0,
+          "ooms_delta": 0
+        },
+        {
+          "rank": 1,
+          "peak_allocated": 15691091456,
+          "peak_reserved": 16976445440,
+          "alloc_retries_delta": 0,
+          "ooms_delta": 0
+        }
+      ],
+      "raw_exact": true
+    },
+    {
+      "arm": "candidate",
+      "phase": "cold",
+      "seconds": 167.835,
+      "sampler_seconds": 120.84760942298453,
+      "stages": {
+        "model_and_graph_preparation": 6.656259620911442,
+        "conditioning": 13.973511471005622,
+        "sampling": 120.84760942298453,
+        "audio_decode": 0.8342295800102875,
+        "video_decode": 18.04511332997936,
+        "video_assembly": 0.004811371996765956,
+        "mp4_save": 6.909431209001923
+      },
+      "memory": [
+        {
+          "rank": 0,
+          "peak_allocated": 19039317504,
+          "peak_reserved": 20352860160,
+          "alloc_retries_delta": 0,
+          "ooms_delta": 0
+        },
+        {
+          "rank": 1,
+          "peak_allocated": 15640235520,
+          "peak_reserved": 16850616320,
+          "alloc_retries_delta": 0,
+          "ooms_delta": 0
+        }
+      ],
+      "raw_exact": true
+    },
+    {
+      "arm": "candidate",
+      "phase": "hot1",
+      "seconds": 158.743,
+      "sampler_seconds": 120.70323288801592,
+      "stages": {
+        "model_and_graph_preparation": 0.013612545997602865,
+        "conditioning": 12.448353603977012,
+        "sampling": 120.70323288801592,
+        "audio_decode": 0.7359390869969502,
+        "video_decode": 17.86538863601163,
+        "video_assembly": 0.004421607998665422,
+        "mp4_save": 6.483856079023099
+      },
+      "memory": [
+        {
+          "rank": 0,
+          "peak_allocated": 19166701056,
+          "peak_reserved": 20480786432,
+          "alloc_retries_delta": 0,
+          "ooms_delta": 0
+        },
+        {
+          "rank": 1,
+          "peak_allocated": 15665794560,
+          "peak_reserved": 16892559360,
+          "alloc_retries_delta": 0,
+          "ooms_delta": 0
+        }
+      ],
+      "raw_exact": true
+    },
+    {
+      "arm": "candidate",
+      "phase": "hot2",
+      "seconds": 160.735,
+      "sampler_seconds": 122.35406075802166,
+      "stages": {
+        "model_and_graph_preparation": 0.018475276010576636,
+        "conditioning": 12.552029501006473,
+        "sampling": 122.35406075802166,
+        "audio_decode": 0.7620158079953399,
+        "video_decode": 18.100332544010598,
+        "video_assembly": 0.004515885026194155,
+        "mp4_save": 6.389191240014043
+      },
+      "memory": [
+        {
+          "rank": 0,
+          "peak_allocated": 19162112512,
+          "peak_reserved": 20375928832,
+          "alloc_retries_delta": 0,
+          "ooms_delta": 0
+        },
+        {
+          "rank": 1,
+          "peak_allocated": 15691353600,
+          "peak_reserved": 16955473920,
+          "alloc_retries_delta": 0,
+          "ooms_delta": 0
+        }
+      ],
+      "raw_exact": true
+    },
+    {
+      "arm": "control-after",
+      "phase": "cold",
+      "seconds": 172.88,
+      "sampler_seconds": 126.0523647069931,
+      "stages": {
+        "model_and_graph_preparation": 6.413391892972868,
+        "conditioning": 13.912275592010701,
+        "sampling": 126.0523647069931,
+        "audio_decode": 0.8334087659895886,
+        "video_decode": 18.045187940995675,
+        "video_assembly": 0.005171970988158137,
+        "mp4_save": 7.063819130009506
+      },
+      "memory": [
+        {
+          "rank": 0,
+          "peak_allocated": 19039317504,
+          "peak_reserved": 19891486720,
+          "alloc_retries_delta": 0,
+          "ooms_delta": 0
+        },
+        {
+          "rank": 1,
+          "peak_allocated": 15639973376,
+          "peak_reserved": 16850616320,
+          "alloc_retries_delta": 0,
+          "ooms_delta": 0
+        }
+      ],
+      "raw_exact": true
+    },
+    {
+      "arm": "control-after",
+      "phase": "hot1",
+      "seconds": 163.832,
+      "sampler_seconds": 125.21000188399921,
+      "stages": {
+        "model_and_graph_preparation": 0.013666287006344646,
+        "conditioning": 13.032311959017534,
+        "sampling": 125.21000188399921,
+        "audio_decode": 0.7233125329948962,
+        "video_decode": 17.966047790978337,
+        "video_assembly": 0.005716089974157512,
+        "mp4_save": 6.3985038160171825
+      },
+      "memory": [
+        {
+          "rank": 0,
+          "peak_allocated": 19166438912,
+          "peak_reserved": 19954401280,
+          "alloc_retries_delta": 0,
+          "ooms_delta": 0
+        },
+        {
+          "rank": 1,
+          "peak_allocated": 15665532416,
+          "peak_reserved": 16913530880,
+          "alloc_retries_delta": 0,
+          "ooms_delta": 0
+        }
+      ],
+      "raw_exact": true
+    },
+    {
+      "arm": "control-after",
+      "phase": "hot2",
+      "seconds": 163.009,
+      "sampler_seconds": 124.88210145500489,
+      "stages": {
+        "model_and_graph_preparation": 0.021887736016651616,
+        "conditioning": 12.309344819019316,
+        "sampling": 124.88210145500489,
+        "audio_decode": 0.7396961739868857,
+        "video_decode": 17.995850517007057,
+        "video_assembly": 0.004495651985052973,
+        "mp4_save": 6.4862242069793865
+      },
+      "memory": [
+        {
+          "rank": 0,
+          "peak_allocated": 19161850368,
+          "peak_reserved": 19998441472,
+          "alloc_retries_delta": 0,
+          "ooms_delta": 0
+        },
+        {
+          "rank": 1,
+          "peak_allocated": 15691091456,
+          "peak_reserved": 16976445440,
+          "alloc_retries_delta": 0,
+          "ooms_delta": 0
+        }
+      ],
+      "raw_exact": true
+    }
+  ]
+}

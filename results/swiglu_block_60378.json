@@ -1,0 +1,365 @@
+{
+  "M": 60378,
+  "state": "completed",
+  "bitwise": {
+    "control": [
+      true,
+      true,
+      true
+    ],
+    "candidate": [
+      true,
+      true,
+      true
+    ]
+  },
+  "timings": {
+    "control": [
+      0.609260507975705,
+      0.6062694849970285,
+      0.6048537440074142,
+      0.6059377969941124,
+      0.6038123480102513,
+      0.6068898130033631,
+      0.605616598011693
+    ],
+    "candidate": [
+      0.5793674089945853,
+      0.5811957620026078,
+      0.5792903080000542,
+      0.5784061879967339,
+      0.5778399279806763,
+      0.5776682220166549,
+      0.5791270000045188
+    ]
+  },
+  "memory": {
+    "control": [
+      [
+        {
+          "rank": 0,
+          "start_allocated": 16235922432,
+          "peak_allocated": 19980743680,
+          "incremental_allocated": 3744821248,
+          "start_reserved": 22177382400,
+          "peak_reserved": 22177382400,
+          "alloc_retries": 0,
+          "ooms": 0
+        },
+        {
+          "rank": 1,
+          "start_allocated": 10237065728,
+          "peak_allocated": 13361271808,
+          "incremental_allocated": 3124206080,
+          "start_reserved": 13964935168,
+          "peak_reserved": 13964935168,
+          "alloc_retries": 0,
+          "ooms": 0
+        }
+      ],
+      [
+        {
+          "rank": 0,
+          "start_allocated": 16235923968,
+          "peak_allocated": 19980745216,
+          "incremental_allocated": 3744821248,
+          "start_reserved": 22177382400,
+          "peak_reserved": 22177382400,
+          "alloc_retries": 0,
+          "ooms": 0
+        },
+        {
+          "rank": 1,
+          "start_allocated": 10237067264,
+          "peak_allocated": 13361273344,
+          "incremental_allocated": 3124206080,
+          "start_reserved": 13964935168,
+          "peak_reserved": 13964935168,
+          "alloc_retries": 0,
+          "ooms": 0
+        }
+      ],
+      [
+        {
+          "rank": 0,
+          "start_allocated": 16235924480,
+          "peak_allocated": 19980745728,
+          "incremental_allocated": 3744821248,
+          "start_reserved": 22177382400,
+          "peak_reserved": 22177382400,
+          "alloc_retries": 0,
+          "ooms": 0
+        },
+        {
+          "rank": 1,
+          "start_allocated": 10237067776,
+          "peak_allocated": 13361273856,
+          "incremental_allocated": 3124206080,
+          "start_reserved": 13964935168,
+          "peak_reserved": 13964935168,
+          "alloc_retries": 0,
+          "ooms": 0
+        }
+      ],
+      [
+        {
+          "rank": 0,
+          "start_allocated": 16235926016,
+          "peak_allocated": 19980747264,
+          "incremental_allocated": 3744821248,
+          "start_reserved": 22177382400,
+          "peak_reserved": 22177382400,
+          "alloc_retries": 0,
+          "ooms": 0
+        },
+        {
+          "rank": 1,
+          "start_allocated": 10237069312,
+          "peak_allocated": 13361275392,
+          "incremental_allocated": 3124206080,
+          "start_reserved": 13964935168,
+          "peak_reserved": 13964935168,
+          "alloc_retries": 0,
+          "ooms": 0
+        }
+      ],
+      [
+        {
+          "rank": 0,
+          "start_allocated": 16235926528,
+          "peak_allocated": 19980747776,
+          "incremental_allocated": 3744821248,
+          "start_reserved": 22177382400,
+          "peak_reserved": 22177382400,
+          "alloc_retries": 0,
+          "ooms": 0
+        },
+        {
+          "rank": 1,
+          "start_allocated": 10237069824,
+          "peak_allocated": 13361275904,
+          "incremental_allocated": 3124206080,
+          "start_reserved": 13964935168,
+          "peak_reserved": 13964935168,
+          "alloc_retries": 0,
+          "ooms": 0
+        }
+      ],
+      [
+        {
+          "rank": 0,
+          "start_allocated": 16235928064,
+          "peak_allocated": 19980749312,
+          "incremental_allocated": 3744821248,
+          "start_reserved": 22177382400,
+          "peak_reserved": 22177382400,
+          "alloc_retries": 0,
+          "ooms": 0
+        },
+        {
+          "rank": 1,
+          "start_allocated": 10237071360,
+          "peak_allocated": 13361277440,
+          "incremental_allocated": 3124206080,
+          "start_reserved": 13964935168,
+          "peak_reserved": 13964935168,
+          "alloc_retries": 0,
+          "ooms": 0
+        }
+      ],
+      [
+        {
+          "rank": 0,
+          "start_allocated": 16235928576,
+          "peak_allocated": 19980749824,
+          "incremental_allocated": 3744821248,
+          "start_reserved": 22177382400,
+          "peak_reserved": 22177382400,
+          "alloc_retries": 0,
+          "ooms": 0
+        },
+        {
+          "rank": 1,
+          "start_allocated": 10237071872,
+          "peak_allocated": 13361277952,
+          "incremental_allocated": 3124206080,
+          "start_reserved": 13964935168,
+          "peak_reserved": 13964935168,
+          "alloc_retries": 0,
+          "ooms": 0
+        }
+      ]
+    ],
+    "candidate": [
+      [
+        {
+          "rank": 0,
+          "start_allocated": 16235922944,
+          "peak_allocated": 19980744192,
+          "incremental_allocated": 3744821248,
+          "start_reserved": 22177382400,
+          "peak_reserved": 22177382400,
+          "alloc_retries": 0,
+          "ooms": 0
+        },
+        {
+          "rank": 1,
+          "start_allocated": 10237066240,
+          "peak_allocated": 13361272320,
+          "incremental_allocated": 3124206080,
+          "start_reserved": 13964935168,
+          "peak_reserved": 13964935168,
+          "alloc_retries": 0,
+          "ooms": 0
+        }
+      ],
+      [
+        {
+          "rank": 0,
+          "start_allocated": 16235923456,
+          "peak_allocated": 19980744704,
+          "incremental_allocated": 3744821248,
+          "start_reserved": 22177382400,
+          "peak_reserved": 22177382400,
+          "alloc_retries": 0,
+          "ooms": 0
+        },
+        {
+          "rank": 1,
+          "start_allocated": 10237066752,
+          "peak_allocated": 13361272832,
+          "incremental_allocated": 3124206080,
+          "start_reserved": 13964935168,
+          "peak_reserved": 13964935168,
+          "alloc_retries": 0,
+          "ooms": 0
+        }
+      ],
+      [
+        {
+          "rank": 0,
+          "start_allocated": 16235924992,
+          "peak_allocated": 19980746240,
+          "incremental_allocated": 3744821248,
+          "start_reserved": 22177382400,
+          "peak_reserved": 22177382400,
+          "alloc_retries": 0,
+          "ooms": 0
+        },
+        {
+          "rank": 1,
+          "start_allocated": 10237068288,
+          "peak_allocated": 13361274368,
+          "incremental_allocated": 3124206080,
+          "start_reserved": 13964935168,
+          "peak_reserved": 13964935168,
+          "alloc_retries": 0,
+          "ooms": 0
+        }
+      ],
+      [
+        {
+          "rank": 0,
+          "start_allocated": 16235925504,
+          "peak_allocated": 19980746752,
+          "incremental_allocated": 3744821248,
+          "start_reserved": 22177382400,
+          "peak_reserved": 22177382400,
+          "alloc_retries": 0,
+          "ooms": 0
+        },
+        {
+          "rank": 1,
+          "start_allocated": 10237068800,
+          "peak_allocated": 13361274880,
+          "incremental_allocated": 3124206080,
+          "start_reserved": 13964935168,
+          "peak_reserved": 13964935168,
+          "alloc_retries": 0,
+          "ooms": 0
+        }
+      ],
+      [
+        {
+          "rank": 0,
+          "start_allocated": 16235927040,
+          "peak_allocated": 19980748288,
+          "incremental_allocated": 3744821248,
+          "start_reserved": 22177382400,
+          "peak_reserved": 22177382400,
+          "alloc_retries": 0,
+          "ooms": 0
+        },
+        {
+          "rank": 1,
+          "start_allocated": 10237070336,
+          "peak_allocated": 13361276416,
+          "incremental_allocated": 3124206080,
+          "start_reserved": 13964935168,
+          "peak_reserved": 13964935168,
+          "alloc_retries": 0,
+          "ooms": 0
+        }
+      ],
+      [
+        {
+          "rank": 0,
+          "start_allocated": 16235927552,
+          "peak_allocated": 19980748800,
+          "incremental_allocated": 3744821248,
+          "start_reserved": 22177382400,
+          "peak_reserved": 22177382400,
+          "alloc_retries": 0,
+          "ooms": 0
+        },
+        {
+          "rank": 1,
+          "start_allocated": 10237070848,
+          "peak_allocated": 13361276928,
+          "incremental_allocated": 3124206080,
+          "start_reserved": 13964935168,
+          "peak_reserved": 13964935168,
+          "alloc_retries": 0,
+          "ooms": 0
+        }
+      ],
+      [
+        {
+          "rank": 0,
+          "start_allocated": 16235929088,
+          "peak_allocated": 19980750336,
+          "incremental_allocated": 3744821248,
+          "start_reserved": 22177382400,
+          "peak_reserved": 22177382400,
+          "alloc_retries": 0,
+          "ooms": 0
+        },
+        {
+          "rank": 1,
+          "start_allocated": 10237072384,
+          "peak_allocated": 13361278464,
+          "incremental_allocated": 3124206080,
+          "start_reserved": 13964935168,
+          "peak_reserved": 13964935168,
+          "alloc_retries": 0,
+          "ooms": 0
+        }
+      ]
+    ]
+  },
+  "input_unchanged": true,
+  "medians_seconds": {
+    "control": 0.6059377969941124,
+    "candidate": 0.5791270000045188
+  },
+  "ratio": 0.9557532190224896,
+  "speedup_percent": 4.424678097751045,
+  "table_bytes_per_rank": {
+    "1": 262144,
+    "0": 262144
+  },
+  "candidate_calls": {
+    "0": 96,
+    "1": 96
+  }
+}

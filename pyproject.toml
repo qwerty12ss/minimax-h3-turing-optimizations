@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minimax-h3-turing-optimizations"
+version = "0.1.0"
+description = "Reviewed SM75 MiniMax H3 acceleration kernels and benchmark ledgers"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.setuptools]
+license-files = ["THIRD_PARTY_LICENSES/*.txt", "THIRD_PARTY_NOTICES.md"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["*.cu", "*.cuh", "csrc/*.cu", "csrc/*.cuh", "csrc/third_party/comfy_kitchen_sage/*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+markers = ["gpu: requires explicit H3_RUN_GPU_TESTS=1, SM75, CUDA and Triton"]

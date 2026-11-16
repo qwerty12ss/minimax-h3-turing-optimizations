@@ -1,0 +1,61 @@
+{
+  "same_ck_sol_hybrid": {
+    "execution_seconds": null,
+    "status": "no verified matched measurement found",
+    "required_mode": "CK INT8 on steps 1,2,7,8; sparse Sol INT8 on steps 3,4,5,6",
+    "no_cross_gpu_speedup_claim": true
+  },
+  "historical_reference": {
+    "gpu": "RTX 3090 24 GB",
+    "cpu": "2x Intel Xeon E5-2686 v4",
+    "ram_gb": 128,
+    "width": 960,
+    "height": 512,
+    "frames": 192,
+    "fps": 24,
+    "steps": 8,
+    "seed": 2026103001,
+    "phase": "cold",
+    "execution_seconds": 217.417,
+    "attention": "Sage auto plus MemoryEfficientSageAttentionPatch",
+    "hot_execution_seconds": null,
+    "provenance": "Historical supplied benchmark table and embedded graph; actual resolved auto kernel was not captured. This is not a pure BF16-attention timing and is not the custom CK/Sol hybrid."
+  },
+  "public_primary_sources": [
+    {
+      "url": "https://github.com/Saganaki22/ComfyUI-sol-attn/releases/tag/v0.6.2",
+      "finding": "SM86 support exists; release explicitly states that SM86 performance has not been formally benchmarked."
+    },
+    {
+      "url": "https://github.com/Comfy-Org/ComfyUI/issues/16150",
+      "finding": "An RTX 3090 report confirms sol_attn_is_available but did not run the sparse test; it provides no matching timing."
+    },
+    {
+      "url": "https://github.com/Comfy-Org/ComfyUI/issues/15263",
+      "finding": "Contains an RTX 3090 Sage benchmark with a different resolution, frame count and 20 steps; excluded from the matched table."
+    }
+  ],
+  "checked_date": "2026-11-16",
+  "external_nonmatched_reports": [
+    {
+      "source": "https://github.com/Comfy-Org/ComfyUI/issues/15263",
+      "gpu": "RTX 3090",
+      "mode": "T2VA",
+      "width": 1344,
+      "height": 768,
+      "frames": 362,
+      "attention": "Comfy Kitchen INT8 dense",
+      "reported_seconds_per_step": 188,
+      "reported_total_seconds": 4020,
+      "power_limit_w": 230,
+      "steps": null,
+      "step_count_note": "The timing table does not label steps; the surrounding author comment discusses 1- and 20-step tests.",
+      "comfyui": "0.32.0",
+      "comfy_kitchen": "0.2.31",
+      "pytorch": "2.10.0+cu128",
+      "phase": "not specified",
+      "comparable_to_anchor": false,
+      "status": "External self-reported benchmark; not independently reproduced; different workload and dense algorithm"
+    }
+  ]
+}

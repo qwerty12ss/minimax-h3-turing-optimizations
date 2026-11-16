@@ -1,0 +1,322 @@
+{
+  "sources": [
+    {
+      "path": "src/h3_turing/pointwise.py",
+      "snapshot_sha256": "3d9c76f9548e2f4879193845d359c378ac47ffa6424c78242dccc1d50956668f",
+      "published_sha256": "3d9c76f9548e2f4879193845d359c378ac47ffa6424c78242dccc1d50956668f",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/sum_reduce.py",
+      "snapshot_sha256": "597708f7b00c9600572ad7a0843b24631b615d3cc3f250637361ea0ccd4a064c",
+      "published_sha256": "597708f7b00c9600572ad7a0843b24631b615d3cc3f250637361ea0ccd4a064c",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/norm_mod/contract.py",
+      "snapshot_sha256": "cac89cdeda449c93e7221992153869679088d408908ca1311d90cb8cb7a43364",
+      "published_sha256": "37528b08342d19f15bb1f906560785310e1bb631624ba91e626812c2b17cdbb9",
+      "adaptations": [
+        "Retain operator shape/launch contracts; omit machine-specific historical qualification loader"
+      ]
+    },
+    {
+      "path": "src/h3_turing/norm_mod/kernel.py",
+      "snapshot_sha256": "b50b80f57c1ef635c3793493f7e57c83f145be85ac36fc2d6a2556cced5b4a66",
+      "published_sha256": "b50b80f57c1ef635c3793493f7e57c83f145be85ac36fc2d6a2556cced5b4a66",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/norm_mod/row_map.py",
+      "snapshot_sha256": "87d93fc07d565d2e5413bd7248b4c30919da4d47f27062dc7cdd7c481f040647",
+      "published_sha256": "87d93fc07d565d2e5413bd7248b4c30919da4d47f27062dc7cdd7c481f040647",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/rope/contract.py",
+      "snapshot_sha256": "6329bf87a3612b54b15068361271d02e6462ee54ebd2668147857c152f22dd90",
+      "published_sha256": "b1094737602f17b26b07bbad1575de002dc61d5b929ac1f2e63e2256bd70f2a3",
+      "adaptations": [
+        "Retain operator geometry/fixture contracts; omit machine-specific historical qualification loader"
+      ]
+    },
+    {
+      "path": "src/h3_turing/rope/kernel.py",
+      "snapshot_sha256": "1be216bda0caea1b94e63c92148dfb3f0e5040f5f900cec7066536544b158d7d",
+      "published_sha256": "1be216bda0caea1b94e63c92148dfb3f0e5040f5f900cec7066536544b158d7d",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/rope/direct_output.py",
+      "snapshot_sha256": "f911514157174247320f58d60134069d36ca1cd32d56da7c12cc1c794174bef1",
+      "published_sha256": "f911514157174247320f58d60134069d36ca1cd32d56da7c12cc1c794174bef1",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/vae/spatial.py",
+      "snapshot_sha256": "8f0ff48f72a1f09d9cdecee581cfe238f717e05fb59b82c2dca58693997ddef9",
+      "published_sha256": "8f0ff48f72a1f09d9cdecee581cfe238f717e05fb59b82c2dca58693997ddef9",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/vae/temporal.py",
+      "snapshot_sha256": "fd6bb905346a6ffdfd5fb5079b6cdfed0fc54295f1149ccf5cafa973f0e2638d",
+      "published_sha256": "fd6bb905346a6ffdfd5fb5079b6cdfed0fc54295f1149ccf5cafa973f0e2638d",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/vae/hybrid.py",
+      "snapshot_sha256": "4e11a1915e166e8803c133c8c553fe0de0e99119278129848d87176257eaf1da",
+      "published_sha256": "0494785d957a6696afad5df3b15cd1f8c24b5a35884de66f5c325c23a205fa8a",
+      "adaptations": [
+        "Public packaging/import/build adaptation"
+      ]
+    },
+    {
+      "path": "src/h3_turing/shared/packet_pipeline.py",
+      "snapshot_sha256": "3a42c7e9b44ceba74a1bf925b5defbd29e77ee889f0e84f1520f240eaf7bd328",
+      "published_sha256": "3a42c7e9b44ceba74a1bf925b5defbd29e77ee889f0e84f1520f240eaf7bd328",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/shared/general_functions.py",
+      "snapshot_sha256": "4abb4c696a825f5f7f2c206d38d91b9bcb7b81cff34a87242d761c1d4800dec5",
+      "published_sha256": "4abb4c696a825f5f7f2c206d38d91b9bcb7b81cff34a87242d761c1d4800dec5",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/shared/baseline.py",
+      "snapshot_sha256": "3ac803eef997977a4c2e053dd20f990f734aace99551f0302ee35ff53009142e",
+      "published_sha256": "cf8e4396e00e45993871e950f0fe1f3374cd900c06ff716167569624f38968cd",
+      "adaptations": [
+        "Public packaging/import/build adaptation",
+        "Site-specific integration hook omitted"
+      ]
+    },
+    {
+      "path": "src/h3_turing/shared/streamed.py",
+      "snapshot_sha256": "72d633e4644547b735e41ab384d0482956a031074808818cbf32a2f8565d1c72",
+      "published_sha256": "33cf9a3b15edcc74c43fe65b11757fc8a1f36649cf0360f3d2b5b239a630c3cf",
+      "adaptations": [
+        "Public packaging/import/build adaptation"
+      ]
+    },
+    {
+      "path": "src/h3_turing/shared/extract.py",
+      "snapshot_sha256": "cbd4cca22611e1ca8efac69e1436bbb03e151d1f298b9e6a33611ea151383068",
+      "published_sha256": "3d190fa52827742fadc6c65ff6d07c80fc46a006bd34ea2a652992dd3398dcb4",
+      "adaptations": [
+        "Retain source derivation functions; resolve pinned CK from installed package; omit site preparation helpers"
+      ]
+    },
+    {
+      "path": "src/h3_turing/swiglu_convrot/joint.py",
+      "snapshot_sha256": "eee2c806742a43baf55f2caca4bb6bc53dde8e10eae64e21f2b9da2e87400db1",
+      "published_sha256": "152440c9faacb382a85e04c76b0d54d2515b4e6dc0b5bb1bd9ee98f8e89ea3c2",
+      "adaptations": [
+        "Public packaging/import/build adaptation"
+      ]
+    },
+    {
+      "path": "src/h3_turing/swiglu_convrot/joint.cu",
+      "snapshot_sha256": "ba45a953b39aad85346913635468f9a2c6187ca66df203ba9736aeb08836872e",
+      "published_sha256": "ba45a953b39aad85346913635468f9a2c6187ca66df203ba9736aeb08836872e",
+      "adaptations": []
+    },
+    {
+      "path": "benchmarks/verify_swiglu.py",
+      "snapshot_sha256": "2ba2abe1e853a90b00540df0df18c7b9b52c36906aef2822c9bee64fdfcf7455",
+      "published_sha256": "b2df4c3b20b912c5df3a1be51063d47da16752cb03fe6282de703a00ec0ad591",
+      "adaptations": [
+        "Public packaging/import/build adaptation"
+      ]
+    },
+    {
+      "path": "src/h3_turing/experimental/exact_dequant_pdd.py",
+      "snapshot_sha256": "ab3a5a6aa9fa85b3a9ffea874f09f00befd47e530dc4a9a786d46ff2a4331ee7",
+      "published_sha256": "ab3a5a6aa9fa85b3a9ffea874f09f00befd47e530dc4a9a786d46ff2a4331ee7",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/experimental/headtau.py",
+      "snapshot_sha256": "6dcfc7f2087c25f9de6b169617bfc548746d9f3e1fabef68bec40ee1e8f19940",
+      "published_sha256": "6dcfc7f2087c25f9de6b169617bfc548746d9f3e1fabef68bec40ee1e8f19940",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/experimental/headtau_routes.cu",
+      "snapshot_sha256": "d389f890a645f600591431021b2e0530fd404f28d14ea7c1a10e922e97446cec",
+      "published_sha256": "d389f890a645f600591431021b2e0530fd404f28d14ea7c1a10e922e97446cec",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/experimental/postquant_accumulator.py",
+      "snapshot_sha256": "370a4d0f30dea5dc6e5cfc941f8aa16bf0d9bd2c92f689873db2187a446d3bd5",
+      "published_sha256": "370a4d0f30dea5dc6e5cfc941f8aa16bf0d9bd2c92f689873db2187a446d3bd5",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/experimental/sol_headtau_preprocess.cuh",
+      "snapshot_sha256": "20c7975c1ee0e990b0f0c51555585c0759c67193307eb5a6e672695f9c03b452",
+      "published_sha256": "20c7975c1ee0e990b0f0c51555585c0759c67193307eb5a6e672695f9c03b452",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/experimental/quantization.py",
+      "snapshot_sha256": "ca52e42c685f5e477d1fffc8916da0b12bee3fe2beb37711edcd3b1e5650c6f4",
+      "published_sha256": "1732ed4117a1772e0b5058f4c05975c63f8dacc4d196c5a7e6a1d7d290a48c33",
+      "adaptations": [
+        "Public packaging/import/build adaptation"
+      ]
+    },
+    {
+      "path": "src/h3_turing/experimental/native_quant.py",
+      "snapshot_sha256": "1575c43c7d3315fa70a121c40f9af91d1f3078dd1a5786b97f898d5f632e52ef",
+      "published_sha256": "1575c43c7d3315fa70a121c40f9af91d1f3078dd1a5786b97f898d5f632e52ef",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/experimental/native_quant.cu",
+      "snapshot_sha256": "6b52e4b5826b53dc66d3a857aaa7d9e589edab1cf5c2b0f6b6441c946021aa8f",
+      "published_sha256": "6b52e4b5826b53dc66d3a857aaa7d9e589edab1cf5c2b0f6b6441c946021aa8f",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/experimental/quant_regs.cu",
+      "snapshot_sha256": "13d9ddf500c5ceeef0a8817d68d6cd25541a0c06b75af4cdadbb0e5b6c9770fa",
+      "published_sha256": "13d9ddf500c5ceeef0a8817d68d6cd25541a0c06b75af4cdadbb0e5b6c9770fa",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/attention/sol_sm75_backend.py",
+      "snapshot_sha256": "4f911e34d7077602bdb6ab47fc529f6834ecea05dd9cbd7b69da58dc204b6325",
+      "published_sha256": "3a8b0a8508f3a1c831cf5c23fa46eba7286bb394e519874ea3bef5a3ac28e93a",
+      "adaptations": [
+        "Relative package name adapted"
+      ]
+    },
+    {
+      "path": "src/h3_turing/attention/sm75_backend.py",
+      "snapshot_sha256": "16a13b0fd67030c1b82f6ad82522b4957886f461967282b379dc99d3a33a7bee",
+      "published_sha256": "16a13b0fd67030c1b82f6ad82522b4957886f461967282b379dc99d3a33a7bee",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/attention/csrc/sla_sm75_sparse.cu",
+      "snapshot_sha256": "b3648303c84afc00f9acd1c4c65477f1bf0abb05c01ae325114685f727d13a07",
+      "published_sha256": "b3648303c84afc00f9acd1c4c65477f1bf0abb05c01ae325114685f727d13a07",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/attention/csrc/sla_sm75_fp16_kernel.cuh",
+      "snapshot_sha256": "817fcffcadc4c947dfb21d3e910d594175e7af5f8883d03fc44c0d062be2a76e",
+      "published_sha256": "817fcffcadc4c947dfb21d3e910d594175e7af5f8883d03fc44c0d062be2a76e",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/attention/csrc/sla_sm75_preprocess.cuh",
+      "snapshot_sha256": "6fa2496f6dc7ee6edd1b88d06634976576e1b5a3afe52403a12d524835dde26e",
+      "published_sha256": "6fa2496f6dc7ee6edd1b88d06634976576e1b5a3afe52403a12d524835dde26e",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/attention/csrc/sol_sm75_preprocess.cuh",
+      "snapshot_sha256": "49c31a34b4193b58cc48e3f6cf4566cdfda1de645cc6eb5cb42fd33a822fb1e1",
+      "published_sha256": "49c31a34b4193b58cc48e3f6cf4566cdfda1de645cc6eb5cb42fd33a822fb1e1",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/attention/csrc/third_party/comfy_kitchen_sage/LICENSE",
+      "snapshot_sha256": "cd1c9ea1573c9047e9b5a3676ecc1c8f755e56f249ac1ebd8b5ceda7899037da",
+      "published_sha256": "cd1c9ea1573c9047e9b5a3676ecc1c8f755e56f249ac1ebd8b5ceda7899037da",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/attention/csrc/third_party/comfy_kitchen_sage/attn_utils.cuh",
+      "snapshot_sha256": "637994f24b4be3b037b64da6730d3d701f7d91a2a18bde18a1959dbf2ef15c06",
+      "published_sha256": "637994f24b4be3b037b64da6730d3d701f7d91a2a18bde18a1959dbf2ef15c06",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/attention/csrc/third_party/comfy_kitchen_sage/cp_async.cuh",
+      "snapshot_sha256": "689f1ac8bcc7bbf223a39bf7e296388dd7c660f613ea9b16d71438d459cb3502",
+      "published_sha256": "d804ae201feecafb23a9ac08f1db39509bb93a73da87d5ce18eb66ff6dbb0977",
+      "adaptations": [
+        "Normalize line endings and trailing whitespace; no arithmetic changes"
+      ]
+    },
+    {
+      "path": "src/h3_turing/attention/csrc/third_party/comfy_kitchen_sage/dtype_dispatch.cuh",
+      "snapshot_sha256": "5a155c3bf2123604a0689ad792016b703c45d9676a389381b482ac1f1afb23bc",
+      "published_sha256": "ad281375922b5bc345b0bbde75ee9c24e9ecc81e8c6d94f79a09d315ecb90a70",
+      "adaptations": [
+        "Normalize line endings and trailing whitespace; no arithmetic changes"
+      ]
+    },
+    {
+      "path": "src/h3_turing/attention/csrc/third_party/comfy_kitchen_sage/float_utils.cuh",
+      "snapshot_sha256": "6d38112d07cfcfe7d1be9d9a5c5a006e379fcfdcdc78bf4729259ef581adc707",
+      "published_sha256": "6d38112d07cfcfe7d1be9d9a5c5a006e379fcfdcdc78bf4729259ef581adc707",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/attention/csrc/third_party/comfy_kitchen_sage/math.cuh",
+      "snapshot_sha256": "9dd9cbd33b628106e5ba0336f2279f04652826165192f5004cd981eba5e951a2",
+      "published_sha256": "7efd9e56ecad034311e4bb9d0aa0f14fa40750f52fe17cd26b7d54162ed7ee3a",
+      "adaptations": [
+        "Normalize line endings and trailing whitespace; no arithmetic changes"
+      ]
+    },
+    {
+      "path": "src/h3_turing/attention/csrc/third_party/comfy_kitchen_sage/mma.cuh",
+      "snapshot_sha256": "fd6bb9febae79107b7c3c6d999cfddc0c84c598ea1f3d7858f805c29013e5c5b",
+      "published_sha256": "fd6bb9febae79107b7c3c6d999cfddc0c84c598ea1f3d7858f805c29013e5c5b",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/attention/csrc/third_party/comfy_kitchen_sage/numeric_conversion.cuh",
+      "snapshot_sha256": "14cbcb4345c039d24f967a2bbf6ebc8420519adee9798f96f4dfb397ddb2adf6",
+      "published_sha256": "14cbcb4345c039d24f967a2bbf6ebc8420519adee9798f96f4dfb397ddb2adf6",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/attention/csrc/third_party/comfy_kitchen_sage/permuted_smem.cuh",
+      "snapshot_sha256": "cd7c61a559714adcde2a3ed00c163a463a1dda876e9e603a3b31bc3f53d06278",
+      "published_sha256": "1819af7bbb7ec32b5b340b4dded5e9d8cf9cb121295ad14b5ae260ec3b61ce6a",
+      "adaptations": [
+        "Normalize line endings and trailing whitespace; no arithmetic changes"
+      ]
+    },
+    {
+      "path": "src/h3_turing/attention/csrc/third_party/comfy_kitchen_sage/qk_int_sv_i8_cuda.cuh",
+      "snapshot_sha256": "45e57a6c9aa20806ccf9a5e84a7ae07757ec90e9a9de90615de112f2651fc9b9",
+      "published_sha256": "45e57a6c9aa20806ccf9a5e84a7ae07757ec90e9a9de90615de112f2651fc9b9",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/attention/csrc/third_party/comfy_kitchen_sage/quant_qk_int8.cu",
+      "snapshot_sha256": "e87f0dfbb4c07ac963a698e2a0a869343592e0ea1757a602e08284417d863687",
+      "published_sha256": "e87f0dfbb4c07ac963a698e2a0a869343592e0ea1757a602e08284417d863687",
+      "adaptations": []
+    },
+    {
+      "path": "src/h3_turing/attention/csrc/third_party/comfy_kitchen_sage/quant_v_int8.cu",
+      "snapshot_sha256": "aa0d36c7eb60daa1c131d26be53b0772226783f2eb5cf5e43727b3ee6f015342",
+      "published_sha256": "aa0d36c7eb60daa1c131d26be53b0772226783f2eb5cf5e43727b3ee6f015342",
+      "adaptations": []
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/Star7-MIT.txt",
+      "snapshot_sha256": "7aabfb48833b4bbea60a63219895918b8869e4804ae0f52af945297a4a2c39df",
+      "published_sha256": "7aabfb48833b4bbea60a63219895918b8869e4804ae0f52af945297a4a2c39df",
+      "adaptations": []
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/SageAttention-Apache-2.0.txt",
+      "snapshot_sha256": "178f46f58127373d449565589a32c2b5b60c082934618c17b7ce6890c61ef394",
+      "published_sha256": "178f46f58127373d449565589a32c2b5b60c082934618c17b7ce6890c61ef394",
+      "adaptations": []
+    }
+  ],
+  "scope": "Reviewed operator snapshots; SHA256 identifies original and published bytes without publishing private source paths."
+}

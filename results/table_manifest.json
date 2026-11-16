@@ -1,0 +1,113 @@
+{
+  "campaign2": {
+    "rows": 58,
+    "columns": [
+      "id",
+      "series",
+      "arm",
+      "phase",
+      "seed",
+      "width",
+      "height",
+      "output_frames",
+      "diagnostic_replay",
+      "execution_seconds",
+      "all_raw_finite",
+      "fully_decoded",
+      "conditioning_seconds",
+      "sampling_seconds",
+      "audio_decode_seconds",
+      "video_decode_seconds",
+      "video_assembly_seconds",
+      "mp4_save_seconds"
+    ],
+    "original_table_sha256": "9ef85bdc520ce5c7a0156f29d5336ad790455196b993486be48f2c6ad70ca99a"
+  },
+  "accuracy_night": {
+    "rows": 66,
+    "columns": [
+      "id",
+      "arm",
+      "phase",
+      "seed",
+      "width",
+      "height",
+      "output_frames",
+      "execution_seconds",
+      "fully_decoded",
+      "sampling_seconds",
+      "video_decode_seconds"
+    ],
+    "original_table_sha256": "7be752eba199e38542714fbd8471392656530a928ec07c729f34b6d46b2380fc"
+  },
+  "followups": {
+    "rows": 32,
+    "columns": [
+      "series",
+      "arm",
+      "phase",
+      "seed",
+      "width",
+      "height",
+      "frames",
+      "diagnostic_replay",
+      "measurement_class",
+      "execution_seconds",
+      "sampling_seconds",
+      "video_decode_seconds",
+      "fully_decoded"
+    ],
+    "original_table_sha256": "29eba684ca1165bf179049e68ff391aa3aa53d7e64ec180511b0f563db7d2afb"
+  },
+  "swiglu_full": {
+    "rows": 9,
+    "columns": [
+      "arm",
+      "phase",
+      "execution_seconds",
+      "sampling_seconds",
+      "video_decode_seconds",
+      "raw_exact"
+    ],
+    "original_table_sha256": "1150d7bdc34077c068e41e894d2c948a2c1fddf0cc09e544e308656fa9c8558c"
+  },
+  "pdd_operators": {
+    "rows": 84,
+    "columns": [
+      "scope",
+      "index",
+      "module",
+      "rows",
+      "seed",
+      "input_scale",
+      "stream",
+      "merged_rmse",
+      "separate_AB_rmse",
+      "rmse_reduction_percent"
+    ],
+    "original_table_sha256": "cb2b3704650988366e324b45f92a0f0970bc4ae57104f6b3d2b9d6d71bfd51c5"
+  },
+  "cmp50": {
+    "rows": 42,
+    "columns": [
+      "case_id",
+      "mode",
+      "phase",
+      "measurement_kind",
+      "execution_seconds",
+      "api_elapsed_seconds",
+      "sampler_reported_seconds",
+      "width",
+      "height",
+      "frames",
+      "seed",
+      "baked",
+      "attention",
+      "success",
+      "fully_decoded",
+      "gpu_peak_mib",
+      "gpu_peak_c"
+    ],
+    "original_table_sha256": "a8e8c622aab6a48dc13f52536b4810192efc782643005f839e9bbf22d500745e"
+  }
+}

@@ -1,0 +1,2794 @@
+{
+  "state": "completed",
+  "passed": true,
+  "devices": [
+    {
+      "rank": 0,
+      "name": "NVIDIA GeForce RTX 2080 Ti",
+      "cases": [
+        {
+          "mode": "default",
+          "kind": "random",
+          "M": 8192,
+          "setting": 0.125,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 8192
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 8192
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "default",
+          "kind": "random",
+          "M": 8192,
+          "setting": 8.0,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 8192
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 8192
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "default",
+          "kind": "random",
+          "M": 4650,
+          "setting": 0.125,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 4650
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 4650
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "default",
+          "kind": "random",
+          "M": 4650,
+          "setting": 8.0,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 4650
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 4650
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "default",
+          "kind": "random",
+          "M": 3034,
+          "setting": 0.125,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 3034
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 3034
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "default",
+          "kind": "random",
+          "M": 3034,
+          "setting": 8.0,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 3034
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 3034
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "default",
+          "kind": "allbits",
+          "M": 10,
+          "setting": 0,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 10
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 10
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "default",
+          "kind": "allbits",
+          "M": 10,
+          "setting": 17,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 10
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 10
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "default",
+          "kind": "allbits",
+          "M": 10,
+          "setting": 32769,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 10
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 10
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "default",
+          "kind": "zero",
+          "M": 17,
+          "setting": 0,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 17
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 17
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "default",
+          "kind": "subnormal",
+          "M": 17,
+          "setting": 0,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 17
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 17
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "nondefault",
+          "kind": "random",
+          "M": 8192,
+          "setting": 0.125,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 8192
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 8192
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "nondefault",
+          "kind": "random",
+          "M": 8192,
+          "setting": 8.0,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 8192
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 8192
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "nondefault",
+          "kind": "random",
+          "M": 4650,
+          "setting": 0.125,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 4650
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 4650
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "nondefault",
+          "kind": "random",
+          "M": 4650,
+          "setting": 8.0,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 4650
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 4650
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "nondefault",
+          "kind": "random",
+          "M": 3034,
+          "setting": 0.125,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 3034
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 3034
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "nondefault",
+          "kind": "random",
+          "M": 3034,
+          "setting": 8.0,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 3034
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 3034
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "nondefault",
+          "kind": "allbits",
+          "M": 10,
+          "setting": 0,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 10
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 10
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "nondefault",
+          "kind": "allbits",
+          "M": 10,
+          "setting": 17,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 10
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 10
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "nondefault",
+          "kind": "allbits",
+          "M": 10,
+          "setting": 32769,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 10
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 10
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "nondefault",
+          "kind": "zero",
+          "M": 17,
+          "setting": 0,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 17
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 17
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "nondefault",
+          "kind": "subnormal",
+          "M": 17,
+          "setting": 0,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 17
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 17
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        }
+      ],
+      "table_bytes": 262144,
+      "passed": true
+    },
+    {
+      "rank": 1,
+      "name": "NVIDIA GeForce RTX 2080 Ti",
+      "cases": [
+        {
+          "mode": "default",
+          "kind": "random",
+          "M": 8192,
+          "setting": 0.125,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 8192
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 8192
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "default",
+          "kind": "random",
+          "M": 8192,
+          "setting": 8.0,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 8192
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 8192
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "default",
+          "kind": "random",
+          "M": 4650,
+          "setting": 0.125,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 4650
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 4650
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "default",
+          "kind": "random",
+          "M": 4650,
+          "setting": 8.0,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 4650
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 4650
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "default",
+          "kind": "random",
+          "M": 3034,
+          "setting": 0.125,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 3034
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 3034
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "default",
+          "kind": "random",
+          "M": 3034,
+          "setting": 8.0,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 3034
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 3034
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "default",
+          "kind": "allbits",
+          "M": 10,
+          "setting": 0,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 10
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 10
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "default",
+          "kind": "allbits",
+          "M": 10,
+          "setting": 17,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 10
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 10
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "default",
+          "kind": "allbits",
+          "M": 10,
+          "setting": 32769,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 10
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 10
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "default",
+          "kind": "zero",
+          "M": 17,
+          "setting": 0,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 17
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 17
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "default",
+          "kind": "subnormal",
+          "M": 17,
+          "setting": 0,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 17
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 17
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "nondefault",
+          "kind": "random",
+          "M": 8192,
+          "setting": 0.125,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 8192
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 8192
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "nondefault",
+          "kind": "random",
+          "M": 8192,
+          "setting": 8.0,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 8192
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 58720256
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 8192
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "nondefault",
+          "kind": "random",
+          "M": 4650,
+          "setting": 0.125,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 4650
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 4650
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "nondefault",
+          "kind": "random",
+          "M": 4650,
+          "setting": 8.0,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 4650
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 33331200
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 4650
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "nondefault",
+          "kind": "random",
+          "M": 3034,
+          "setting": 0.125,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 3034
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 3034
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "nondefault",
+          "kind": "random",
+          "M": 3034,
+          "setting": 8.0,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 3034
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 21747712
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 3034
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "nondefault",
+          "kind": "allbits",
+          "M": 10,
+          "setting": 0,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 10
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 10
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "nondefault",
+          "kind": "allbits",
+          "M": 10,
+          "setting": 17,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 10
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 10
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "nondefault",
+          "kind": "allbits",
+          "M": 10,
+          "setting": 32769,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 10
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 71680
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 10
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "nondefault",
+          "kind": "zero",
+          "M": 17,
+          "setting": 0,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 17
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 17
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        },
+        {
+          "mode": "nondefault",
+          "kind": "subnormal",
+          "M": 17,
+          "setting": 0,
+          "reference_repeat": [
+            true,
+            true,
+            true
+          ],
+          "variants": [
+            {
+              "warps": 4,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 17
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            },
+            {
+              "warps": 8,
+              "activation": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "q": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 121856
+              },
+              "scales": {
+                "bitwise": true,
+                "mismatches": 0,
+                "elements": 17
+              },
+              "repeat": [
+                true,
+                true,
+                true
+              ],
+              "passed": true
+            }
+          ],
+          "input_unchanged": true,
+          "passed": true
+        }
+      ],
+      "table_bytes": 262144,
+      "passed": true
+    }
+  ]
+}

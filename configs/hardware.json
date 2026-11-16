@@ -1,0 +1,67 @@
+{
+  "cpu": {
+    "model": "Intel Xeon E5-2686 v4",
+    "sockets": 2,
+    "cores_per_socket": 18,
+    "threads_per_core": 2,
+    "logical_cpus": 72,
+    "base_ghz": 2.3,
+    "numa_nodes": 2
+  },
+  "memory": {
+    "nominal_gb": 128,
+    "linux_memtotal_kib": 131815596
+  },
+  "accelerators": [
+    {
+      "logical_rank": 0,
+      "model": "NVIDIA GeForce RTX 2080 Ti",
+      "architecture": "Turing",
+      "compute_capability": "7.5",
+      "vram_mib": 22528,
+      "vram_modified": true,
+      "power_limit_w": 207,
+      "pcie": {
+        "generation": 3,
+        "current_gt_s": 8.0,
+        "current_width": 16,
+        "max_gt_s": 8.0,
+        "max_width": 16
+      },
+      "numa_node": 1
+    },
+    {
+      "logical_rank": 1,
+      "model": "NVIDIA GeForce RTX 2080 Ti",
+      "architecture": "Turing",
+      "compute_capability": "7.5",
+      "vram_mib": 22528,
+      "vram_modified": true,
+      "power_limit_w": 215,
+      "pcie": {
+        "generation": 3,
+        "current_gt_s": 8.0,
+        "current_width": 16,
+        "max_gt_s": 8.0,
+        "max_width": 16
+      },
+      "numa_node": 1
+    }
+  ],
+  "interconnect": {
+    "topology_label": "NV2",
+    "peer_access_both_directions": true,
+    "host_binding": "CPU and preferred memory on the GPU-local NUMA node",
+    "observation": "Link width/speed were read from sysfs; no nominal PCIe bandwidth substituted for a measurement."
+  },
+  "software": {
+    "python": "3.12.3",
+    "pytorch": "2.13.0+cu130",
+    "cuda_build": "13.0",
+    "driver": "580.178.04",
+    "comfy_kitchen": "0.2.39",
+    "comfyui_commit": "63be2f9b82ad0dac88a7ceaa28a9cf3154125a18"
+  },
+  "measurement_dates": "2026-10-30 through 2026-11-02",
+  "scope": "Recorded benchmark configuration, not a live inventory. Software versions belong to captured runs; source hash guards are authoritative."
+}
