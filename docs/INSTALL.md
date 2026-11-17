@@ -4,6 +4,8 @@
 
 This installs an isolated ComfyUI, FP16 H3 loader, PDD, dual-GPU TP2 and the published acceleration operators. The supplied workflows create a synthetic test image and use a new neutral prompt. No private assets, credentials or server configuration are needed.
 
+The optional **[Qwen TP2 + FC2 + DiT cache recipe](RECIPE_LUNA.md)** is installed separately. **Qwen changes both video and audio even with the same seed**; cache alone preserved the output bit for bit in the measured case.
+
 ## Requirements
 
 Linux x86_64, Python **3.12** (Ubuntu 24.04 is a suitable starting point), **two SM75 RTX 2080 Ti cards modified to 22 GiB each**, bidirectional CUDA P2P, approximately **128 GB host RAM**, and **90 GB free disk space**. Stock 11 GiB cards are unsupported. The five weights occupy 43.84 GB. Install **CUDA Toolkit 13.0**, including `nvcc`, and a compatible NVIDIA driver using [NVIDIA's Linux installation guide](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/) and the [CUDA 13.0 archive](https://developer.nvidia.com/cuda-13-0-0-download-archive). The recorded driver is from branch 580. Windows and WSL2 are not qualified deployment targets.

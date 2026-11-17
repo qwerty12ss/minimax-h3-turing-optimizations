@@ -1,0 +1,214 @@
+{
+  "schema": 1,
+  "measured_dates": [
+    "2026-11-16",
+    "2026-11-17"
+  ],
+  "base_commit": "eb262dc1ca489bdaee648d0eda40cafc0467350b",
+  "community_commit": "945c326132dc182d27299a44c003e6b8f5849ab6",
+  "cutlass_commit": "afa1772203677c5118fcd82537a9c8fefbcc7008",
+  "comparison": "Our original optimized pipeline versus our pipeline with adapted Luna accelerations; not a full original Luna repository run",
+  "parameters": {
+    "width": 960,
+    "height": 512,
+    "frames": 192,
+    "fps": 24,
+    "steps": 8,
+    "seed": 2026103001,
+    "sampler": "euler",
+    "cfg": 1,
+    "sigma_shift": [
+      12,
+      3
+    ],
+    "attention_ck_int8_steps": [
+      1,
+      2,
+      7,
+      8
+    ],
+    "attention_sol_int8_steps": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "gpu": "2 x RTX 2080 Ti 22 GiB, NV2/P2P",
+    "encoder": "original NVFP4 AWQ, no GGUF conversion"
+  },
+  "timing_boundary": "Full ComfyUI execution, including Qwen, DiT preparation, all sampling, VAE, audio and MP4; diagnostic lossless dumps excluded",
+  "groups": {
+    "baseline": {
+      "n": 2,
+      "seconds": [
+        167.856,
+        174.832
+      ],
+      "median_seconds": 171.344
+    },
+    "cache_first_packs": {
+      "n": 1,
+      "seconds": [
+        185.169
+      ],
+      "median_seconds": 185.169,
+      "comparison_basis": "median_of_r1_r4_controls",
+      "reference_seconds": 171.344,
+      "saved_seconds": -13.825000000000017,
+      "time_reduction_percent": -8.068563824820256,
+      "speedup": 0.9253384745826785,
+      "saved_seconds_vs_control_range": [
+        -17.313000000000017,
+        -10.337000000000018
+      ],
+      "time_reduction_percent_vs_control_range": [
+        -10.314197883900496,
+        -5.912533174704869
+      ]
+    },
+    "cache_warm": {
+      "n": 1,
+      "seconds": [
+        158.545
+      ],
+      "median_seconds": 158.545,
+      "comparison_basis": "median_of_r1_r4_controls",
+      "reference_seconds": 171.344,
+      "saved_seconds": 12.799000000000007,
+      "time_reduction_percent": 7.469768419086753,
+      "speedup": 1.0807278690592577,
+      "saved_seconds_vs_control_range": [
+        9.311000000000007,
+        16.287000000000006
+      ],
+      "time_reduction_percent_vs_control_range": [
+        5.547016490325045,
+        9.315800311155858
+      ]
+    },
+    "combined_first_qwen_packs": {
+      "n": 1,
+      "seconds": [
+        159.67
+      ],
+      "median_seconds": 159.67,
+      "comparison_basis": "median_of_r1_r4_controls",
+      "reference_seconds": 171.344,
+      "saved_seconds": 11.674000000000007,
+      "time_reduction_percent": 6.813194509291254,
+      "speedup": 1.0731132961733576,
+      "saved_seconds_vs_control_range": [
+        8.186000000000007,
+        15.162000000000006
+      ],
+      "time_reduction_percent_vs_control_range": [
+        4.876799161185783,
+        8.672325432415123
+      ]
+    },
+    "combined_warm": {
+      "n": 1,
+      "seconds": [
+        140.554
+      ],
+      "median_seconds": 140.554,
+      "comparison_basis": "median_of_r1_r4_controls",
+      "reference_seconds": 171.344,
+      "saved_seconds": 30.789999999999992,
+      "time_reduction_percent": 17.96969838453637,
+      "speedup": 1.2190617129359533,
+      "saved_seconds_vs_control_range": [
+        27.301999999999992,
+        34.27799999999999
+      ],
+      "time_reduction_percent_vs_control_range": [
+        16.26513201792012,
+        19.606250571977668
+      ]
+    },
+    "qwen_only_warm": {
+      "n": 1,
+      "seconds": [
+        158.859
+      ],
+      "median_seconds": 158.859,
+      "comparison_basis": "median_of_r1_r4_controls",
+      "reference_seconds": 171.344,
+      "saved_seconds": 12.484999999999985,
+      "time_reduction_percent": 7.2865113455971535,
+      "speedup": 1.0785917071113376,
+      "saved_seconds_vs_control_range": [
+        8.996999999999986,
+        15.972999999999985
+      ],
+      "time_reduction_percent_vs_control_range": [
+        5.3599513869030515,
+        9.13619932277843
+      ]
+    },
+    "fc2_only": {
+      "n": 1,
+      "seconds": [
+        174.712
+      ],
+      "median_seconds": 174.712,
+      "comparison_basis": "adjacent_r4_control",
+      "reference_seconds": 174.832,
+      "saved_seconds": 0.12000000000000455,
+      "time_reduction_percent": 0.06863732039901423,
+      "speedup": 1.0006868446357433,
+      "saved_seconds_vs_control_range": [
+        -6.8559999999999945,
+        0.12000000000000455
+      ],
+      "time_reduction_percent_vs_control_range": [
+        -4.084453340958914,
+        0.06863732039901423
+      ]
+    }
+  },
+  "fastest_recorded_pair": {
+    "original_seconds": 167.317,
+    "candidate_seconds": 140.554,
+    "saved_seconds": 26.763,
+    "time_reduction_percent": 15.995386003813122,
+    "note": "Original is first job of its series and excluded from warm-control aggregate"
+  },
+  "output_contract": {
+    "cache_alone": "All 192 raw float32 frames, source waveform, conditioning, tags and reference latent bitwise equal in the measured case",
+    "fc2_alone": "Same exact checks passed; no meaningful full-job speed gain",
+    "fc2_cache_without_qwen": "Not separately measured",
+    "qwen": "Different raw frames AND source audio, even with identical input/prompt/seed/settings",
+    "qwen_vs_combination": "Bitwise identical output across tested repeats",
+    "qwen_conditioning_relative_l2": 7.174234251228e-06,
+    "qwen_video_psnr_db": 24.086451875195223,
+    "qwen_video_mae_0_1": 0.0278060218233,
+    "qwen_source_audio_relative_l2": 0.1151057076057,
+    "perceptual_quality": "Difference metrics are not a quality score; sampled frames only, no full subjective motion/audio assessment"
+  },
+  "cpu_pack_bytes": {
+    "dit": 20431001600,
+    "qwen": 13722444800
+  },
+  "cache_fix": "One slot per original block, wrapper-independent storage/content fingerprints, release before replacement; DiT limits 50 blocks and 22 GiB",
+  "validation": {
+    "historical_gpu_compute": "Completed original experiment; see recorded scope",
+    "unchanged_compute_sources": {
+      "awq_tp.py": "7e29056314554e4479df18d743bed7e1cd20b830d23c7f1238fa4a0f6fbb3882",
+      "packed_shards.py": "b9bc07225234b1e2295e89d1c4f22bdb60bf6bd9075f7f1f22922b0a1f49e20d",
+      "kernel.cu": "3ca798133fb7c32c1c29dfae9bbef576802bbe416ec72dd2cd95208090dd65b5"
+    },
+    "public_wrapper": "Raw media/tensor/probe dumps removed, scalar GET stats added; local mocked integration checks only",
+    "public_end_to_end_gpu_rerun": false,
+    "cpu_suite_passed": 31,
+    "gpu_tests_skipped": 8,
+    "cache_lifetime_regression_passed": true
+  },
+  "limitations": [
+    "One scene and seed, small sample; no locked-clock/exclusive-host benchmark",
+    "Control-range percentages are not confidence intervals",
+    "No fully cold combined-cache job measured after cache fix",
+    "Fresh processes required for feature-off controls due to pinned allocator retention",
+    "Historical input, prompt, media and originating machine identifiers omitted"
+  ]
+}

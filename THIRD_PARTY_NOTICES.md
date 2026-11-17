@@ -1,5 +1,7 @@
 # Source attribution
 
+The opt-in [Luna recipe](recipes/luna/README.md) includes an AWQ Qwen scheduling/TP adaptation and FC2 CUDA source derived from [Luna-AI-Infra/ComfyUI-H3-2080Ti-TP at 945c326132dc182d27299a44c003e6b8f5849ab6](https://github.com/Luna-AI-Infra/ComfyUI-H3-2080Ti-TP/tree/945c326132dc182d27299a44c003e6b8f5849ab6), based on Márton Sági's Comfy-H3-MultiStream. That optional recipe is GPL-3.0-only; its complete license, fork NOTICE and upstream notice are retained in `recipes/luna/`. The external CUTLASS templates are not bundled; their BSD license is retained there for attribution. The recipe is installed only by the explicit steps in its guide.
+
 The published SM75 attention backend and preprocessing are derived from the Star7 research source snapshot. Its MIT license is retained in [THIRD_PARTY_LICENSES/Star7-MIT.txt](THIRD_PARTY_LICENSES/Star7-MIT.txt).
 
 Files in `src/h3_turing/attention/csrc/third_party/comfy_kitchen_sage/` derive from ComfyUI comfy-kitchen and SageAttention. They retain their source copyright/SPDX headers, including SageAttention and NVIDIA attribution. The Apache-2.0 text is preserved in that directory. The original source states SageAttention revision `d1a57a546c3d395b1ffcbeecc66d81db76f3b4b5` and describes removal of torch extension dependencies and flattened includes. The SM75 FP16-derived portion also has its retained Apache-2.0 text in `THIRD_PARTY_LICENSES/SageAttention-Apache-2.0.txt`.

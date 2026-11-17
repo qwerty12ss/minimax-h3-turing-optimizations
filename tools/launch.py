@@ -21,6 +21,8 @@ def main():
     parser.add_argument("--root", type=Path, default=Path.home() / "h3-turing-runtime")
     parser.add_argument("--gpus", default="0,1", help="Two physical GPU indices, e.g. 0,1")
     parser.add_argument("--port", type=int, default=8188)
+    parser.add_argument("--cache-classic", action="store_true",
+                        help="Retain loader/model objects for the optional Luna recipe; its client forces fresh generation")
     args = parser.parse_args()
     indices = args.gpus.split(",")
     if len(indices) != 2 or len(set(indices)) != 2 or not all(i.isdigit() for i in indices):
@@ -56,7 +58,8 @@ print("Two SM75 22 GiB GPUs and bidirectional P2P verified", flush=True)
 '''
     subprocess.run([python, "-c", probe], env=environment, check=True)
     command = [str(python), str(root / "ComfyUI/main.py"), "--listen", "127.0.0.1", "--port", str(args.port),
-               "--disable-dynamic-vram", "--disable-cuda-malloc", "--reserve-vram", "1", "--preview-method", "none", "--cache-none", "--disable-auto-launch"]
+               "--disable-dynamic-vram", "--disable-cuda-malloc", "--reserve-vram", "1", "--preview-method", "none",
+               "--cache-classic" if args.cache_classic else "--cache-none", "--disable-auto-launch"]
     raise SystemExit(subprocess.call(command, env=environment, cwd=root / "ComfyUI"))
 
 

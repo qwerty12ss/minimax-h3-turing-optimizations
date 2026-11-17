@@ -20,6 +20,10 @@ This is a curated research release with a new Git history. It includes no input 
 
 Includes ComfyUI custom nodes, the original TP2 core, PDD integration, an isolated stack installer and two portable video/audio workflows. **[Deploy from scratch](docs/INSTALL.md)** covers hardware, SHA256-pinned public models, dependencies, configuration and execution. See [deployment validation](docs/DEPLOYMENT_VALIDATION.md) for actual checks. New synthetic workflows need no historical private assets. Source hashes and adaptation notes are in [the source manifest](results/source_manifest.json).
 
+## Additional accelerated recipe
+
+**[Qwen TP2 + FC2 + DiT cache](docs/RECIPE_LUNA.md)** completed the measured warm full job in **140.554 s** versus a **171.344 s** control median (−17.97%). **Qwen changes the output: both video and audio differ even with the same seed.** The separate `cache` mode took **158.545 s** and preserved raw frames and source audio bit for bit in that case. The recipe covers installation, mode selection, first-run overhead and the validation limits of the public wrapper. This is a separate experiment; its percentages must not be added to those below.
+
 ## Recorded full-job results
 
 All rows below use a 960 × 512, 192-frame, 24-fps, eight-step workload on **2 × 2080 Ti**. Each row is a separate bracketed experiment, with its own seed and baseline. Cold runs are excluded. The exact estimators and raw checks are described in [benchmark notes](docs/BENCHMARKS.md).

@@ -385,6 +385,84 @@
       "adaptations": [
         "Avoid unused SLA helper import on the SM75-only deployment path; SM75 arithmetic unchanged"
       ]
+    },
+    {
+      "path": "recipes/luna/__init__.py",
+      "snapshot_sha256": "79722d3a5f81eda122474e705fa6d670a02fb486b35ada22909840066c48ca3e",
+      "published_sha256": "67f1416116e0664791a0549d747cbe7b90e61819985516c5c75b1614f82637a1",
+      "adaptations": [
+        "Public optional-recipe wrapper/documentation/attribution; computation unchanged where stated in recipe README"
+      ]
+    },
+    {
+      "path": "recipes/luna/awq_tp.py",
+      "snapshot_sha256": "7e29056314554e4479df18d743bed7e1cd20b830d23c7f1238fa4a0f6fbb3882",
+      "published_sha256": "7e29056314554e4479df18d743bed7e1cd20b830d23c7f1238fa4a0f6fbb3882",
+      "adaptations": []
+    },
+    {
+      "path": "recipes/luna/CUTLASS-LICENSE.txt",
+      "snapshot_sha256": "6b9e8b964c2a90f7743107a23bccec9ebc6f5a47d4a8fa3d986aa6f51f86da68",
+      "published_sha256": "42fec630f410aa308f70a51a89fadcd19586fa620f9831a32bee528a9a10000e",
+      "adaptations": [
+        "Normalize license/notice line endings to LF; preserve text"
+      ]
+    },
+    {
+      "path": "recipes/luna/fc2-policy.json",
+      "snapshot_sha256": "a60399687819e2fe62dc124eeedb2dcec272699ca9a6a0fd1d791fc6fd35f1e5",
+      "published_sha256": "a60399687819e2fe62dc124eeedb2dcec272699ca9a6a0fd1d791fc6fd35f1e5",
+      "adaptations": []
+    },
+    {
+      "path": "recipes/luna/kernel.cu",
+      "snapshot_sha256": "3ca798133fb7c32c1c29dfae9bbef576802bbe416ec72dd2cd95208090dd65b5",
+      "published_sha256": "3ca798133fb7c32c1c29dfae9bbef576802bbe416ec72dd2cd95208090dd65b5",
+      "adaptations": []
+    },
+    {
+      "path": "recipes/luna/LICENSE",
+      "snapshot_sha256": "230184f60bae2feaf244f10a8bac053c8ff33a183bcc365b4d8b876d2b7f4809",
+      "published_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "adaptations": [
+        "Normalize license/notice line endings to LF; preserve text"
+      ]
+    },
+    {
+      "path": "recipes/luna/NOTICE",
+      "snapshot_sha256": "f9c8310cf89fb0546ef5b9b35dbfcc57fc33aff8a7919eecf2bebb57e189d86f",
+      "published_sha256": "38e3ab28df6f51b44d5b48dd38d6fc6c08cfb37db994bbf2ca242c8ecee3c59e",
+      "adaptations": [
+        "Normalize license/notice line endings to LF; preserve text"
+      ]
+    },
+    {
+      "path": "recipes/luna/packed_shards.py",
+      "snapshot_sha256": "b9bc07225234b1e2295e89d1c4f22bdb60bf6bd9075f7f1f22922b0a1f49e20d",
+      "published_sha256": "b9bc07225234b1e2295e89d1c4f22bdb60bf6bd9075f7f1f22922b0a1f49e20d",
+      "adaptations": []
+    },
+    {
+      "path": "recipes/luna/README.md",
+      "snapshot_sha256": "a10673a7aa5417eb6cd866e56404255902c77a75a0aad9644a7cd4ed6ea9850a",
+      "published_sha256": "a10673a7aa5417eb6cd866e56404255902c77a75a0aad9644a7cd4ed6ea9850a",
+      "adaptations": [
+        "Public optional-recipe wrapper/documentation/attribution; computation unchanged where stated in recipe README"
+      ]
+    },
+    {
+      "path": "recipes/luna/test_cache_lifetime.py",
+      "snapshot_sha256": "8cf1ee5b2111dce1e01cae2de6e4fcc4132febddf0b4e46b6fbf61d623813830",
+      "published_sha256": "8cf1ee5b2111dce1e01cae2de6e4fcc4132febddf0b4e46b6fbf61d623813830",
+      "adaptations": []
+    },
+    {
+      "path": "recipes/luna/UPSTREAM-NOTICE.txt",
+      "snapshot_sha256": "b934d097674954bbb4fbabf5dbee13149f0b8be9a550179daf35246952039009",
+      "published_sha256": "6a5afd203b7c4b5385210966c08cce3e3a7745dd583009626e84523ca87846cc",
+      "adaptations": [
+        "Normalize license/notice line endings to LF; preserve text"
+      ]
     }
   ],
   "scope": "Reviewed operator snapshots; SHA256 identifies original and published bytes without publishing private source paths."
